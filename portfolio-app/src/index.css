@@ -8,6 +8,8 @@
 
 body {
   background-color: #031629;
+  color: white;
+  max-width: 100%;
 }
 
 .cv {
