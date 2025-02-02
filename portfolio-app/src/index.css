@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", "serif";
+  --font-nunito: "Nunito", "serif";
+  --font-chivo: "Chivo", "serif";
+}
+
+body {
+  background-color: #031629;
+}
+
+.cv {
+  background: rgb(95, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(95, 58, 180, 1) 0%,
+    rgba(156, 73, 123, 1) 100%,
+    rgba(188, 80, 93, 1) 100%,
+    rgba(241, 92, 44, 1) 100%,
+    rgba(186, 75, 112, 1) 100%,
+    rgba(253, 96, 29, 1) 100%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
