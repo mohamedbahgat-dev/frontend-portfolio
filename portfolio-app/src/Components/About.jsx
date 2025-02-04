@@ -2,8 +2,8 @@ import React from 'react'
 
 function About() {
   return (
-    <div className='about border-b-1 border-gray-500'>
-        <h1 className='inline-block mx-30 mt-10 font-poppins text-[30px] font-light uppercase text-transparent bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text'>About Me</h1>
+    <div id='about' className='about border-b-1 border-gray-500'>
+        <h1 className='inline-block mx-20 mt-10 font-poppins text-[30px] font-light uppercase text-transparent bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text'>About Me</h1>
         <div className='flex justify-around items-center min-h-[60vh]'>
             <div className='max-w-[50%] ml-20 flex flex-col gap-2 text-gray-400'>
             
@@ -17,7 +17,7 @@ function About() {
                 <p>  I'm currently looking for opportunities to bring my skills to a dynamic team and contribute to building innovative digital solutions. Let's connect and create something amazing together!</p>
             </div>
             <div>
-                <img className='w-76 h-76 rounded-full mr-20' src='../src/assets/myphoto.jpg' />
+                <img className='w-76 h-76 rounded-full mr-20 brightness-125' src='../src/assets/myphoto.jpg' />
             </div>
 
         </div>
