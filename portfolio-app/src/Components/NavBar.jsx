@@ -9,8 +9,8 @@ function NavBar() {
                 <div className='flex flex-wrap gap-x-10'>
                     <a href="./#about">About Me</a>
                     <a href="./#skills">Skills</a>
+                    <a href="./#services">Services</a>
                     <a href="./#projects">Projects</a>
-                    <a href="./#education">Education</a>
                     <a href="./#contacts">Contact</a>
                 </div>
                 <button className='cv px-[20px] py-[4px] rounded-[20px] shadow-[0px_0px_4px_0px] shadow-[#fa61d68c]'>Download CV</button>   
