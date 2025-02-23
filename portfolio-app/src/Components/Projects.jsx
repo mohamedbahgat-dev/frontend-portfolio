@@ -72,6 +72,7 @@ function Projects() {
             </div>
 
             {/* projects cards --end-- */}
+            
          </div>
     </div>
   )

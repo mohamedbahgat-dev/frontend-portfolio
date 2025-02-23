@@ -3,17 +3,21 @@
 function NavBar() {
   return (
     <div>
-        <div>
-            <nav className='flex justify-between items-center flex-wrap px-10 py-5 mt-10 mx-25  border rounded-xl text-white font-poppins font-light uppercase'>
-                <h3 className="font-medium">Mohamed Bahgat</h3>
-                <div className='flex flex-wrap gap-x-10'>
-                    <a href="./#about">About Me</a>
+        <div className="fixed top-0 w-full z-40">
+            <nav className='navbar flex justify-between items-center flex-wrap p-10 text-[#6e65f6] font-poppins font-medium uppercase'>
+                
+                <div className='flex flex-wrap items-center justify-center gap-x-10 mr-15'>
+                    
                     <a href="./#skills">Skills</a>
                     <a href="./#services">Services</a>
                     <a href="./#projects">Projects</a>
                     <a href="./#contacts">Contact</a>
                 </div>
-                <button className='cv px-[20px] py-[4px] rounded-[20px] shadow-[0px_0px_4px_0px] shadow-[#fa61d68c]'>Download CV</button>   
+                <div className="flex gap-5 text-sky-800 ">
+                  <a href="#" className="fa fa-linkedin hover:text-bg-amber-400"></a>
+                  <a href="#" className="fa fa-github"></a>
+                  <a href="#" className="fa fa-envelope"></a>
+                </div>
             </nav>
         </div>
     </div>

@@ -4,24 +4,23 @@ import About from "./Components/About"
 import Skills from "./Components/Skills"
 import Projects from "./Components/projects"
 import Services from "./Components/Services"
+import Contacts from "./Components/Contacts"
 
 function App() {
  
 
   return (
     <>
-      <div>
-        <NavBar />
+      <div>  
         <Hero />
         <About />
-        <Skills />
-        <Services />
-        <Projects />
-        
        
+        <Services />
+        <Projects /> 
+        <Contacts />
       </div>
     </>
   )
 }
 
-export default App
+export default App;

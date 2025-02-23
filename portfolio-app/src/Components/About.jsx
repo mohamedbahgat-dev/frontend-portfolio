@@ -1,26 +1,119 @@
-import React from 'react'
+import { useEffect } from 'react';
+import Skills from './Skills';
+
 
 function About() {
+
+  useEffect(()=>{
+
+    const cards = document.querySelectorAll('.about-cards div')
+    const sideCards = document.querySelectorAll('.side-cards span')
+    
+
+    cards.forEach((card, index)=> {
+      card.addEventListener('click', function(){
+        const style = window.getComputedStyle(card)
+        const angel = style.getPropertyValue('rotate')
+        
+        //console.log(card.lastElementChild.textContent)
+      
+        if(angel[0] === '-'){
+
+          card.style.transform = `rotate(${+angel[1]}deg)`
+         }else {
+          card.style.transform = `rotate(${-angel[0]}deg)`
+         }
+
+         const bottom = card.getBoundingClientRect().bottom
+         const top = card.getBoundingClientRect().top
+         const middlePoint = (bottom - top )/2
+
+         
+                  
+         card.addEventListener('click', function(){ 
+          card.style.transform = `translateX(-170vh) translateY(-${middlePoint}px) rotate(-100deg)`       
+          card.style.transition = '2s ease-in-out'
+          card.style.animation = 'fadeOut 2s ease-out'
+          sideCards[index].textContent = card.lastElementChild.textContent
+          sideCards[index].style.display = 'block'
+
+          sideCards.forEach((sideCard, sideIndex)=> {
+            sideCard.addEventListener('click', function(){
+              if(sideIndex === index) {
+                card.style.transform = `translateX(2vh)`
+                sideCard.textContent = ''
+                sideCard.style.display = 'none'             
+              }
+            })
+          })       
+         })
+      })
+    })
+  })
+
+
   return (
-    <div id='about' className='about border-b-1 border-gray-500'>
-        <h1 className='inline-block mx-20 mt-10 font-poppins text-[30px] font-light uppercase text-transparent bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text'>About Me</h1>
-        <div className='flex justify-around items-center min-h-[60vh]'>
-            <div className='max-w-[50%] ml-20 flex flex-col gap-2 text-gray-400'>
-            
-                <p>Hi, I'm Mohamed, a self-taught front-end developer with a passion for creating beautiful, user-friendly, and responsive websites. My journey into web development began with a curiosity for how websites work, and it quickly turned into a deep love for coding and design.</p>
-                    
-                <p>Through dedicated self-study, online courses, and hands-on projects, I've honed my skills in HTML, CSS, JavaScript, React. I recently completed the ALX Foundation program, where I strengthened my problem-solving abilities and gained valuable experience in collaborative coding environments.
-                 I thrive on turning ideas into reality and enjoy the challenge of creating seamless, visually appealing, and functional web experiences.</p> 
-
-                <p> When I'm not coding, you can find me Reading about and exploring new technologies, contributing to open-source projects, or learning a new skill kit. I'm always eager to learn, grow, and take on new challenges in the ever-evolving world of web development.</p>    
-
-                <p>  I'm currently looking for opportunities to bring my skills to a dynamic team and contribute to building innovative digital solutions. Let's connect and create something amazing together!</p>
-            </div>
-            <div>
-                <img className='w-76 h-76 rounded-full mr-20 brightness-125' src='../src/assets/myphoto.jpg' />
-            </div>
-
+    <div id='about' className=' h-[150vh] relative -top-80'>
+        <div className='flex flex-col items-center justify-center'>
+          <img className='absolute w-40 -top-[60px]' src='../src/assets/circle.png'/>
+          <h1 className='about-header inline-block text-3xl text-[#6e65f6] uppercase z-30'>About Me</h1>
+          {/* <img className='arrow w-20 mr-50 ' src='../src/assets/arrow.svg'/> */}
+          
+          
         </div>
+        
+        <div className='mt-20'>
+           {/* mian display cards container */}
+            <div className='about-cards flex justify-center items-center text-gray-400 '>
+
+              <div className='flex flex-col items-center justify-center bg-[#f9c1c1] text-[#543435] rounded-4xl w-80 rotate-2 shadow-md shadow-[gray]'>
+                <img className=' w-60 mt-3 rounded-3xl' src='../src/assets/learn.svg' />
+                <p className='w-65 text-center'>When I'm not coding, you can find me Reading about and exploring new technologies, contributing to open-source projects, or learning a new skill.</p>
+                <h2 className='text-center m-5 uppercase font-nunito text-xl font-bold'>Never Stop Learning</h2>
+              </div>
+
+               <div className='flex flex-col items-center justify-center bg-[#ffe2b4] text-[#543435] rounded-4xl w-80 -rotate-2 shadow-md shadow-[#c1bebe]'>
+                <img className=' w-60 mt-3 rounded-3xl' src='../src/assets/outcomes.svg' />
+                <p className='w-65 text-center'>I thrive on turning ideas into reality and enjoy the challenge of building modern, intuitive web experiences that combine creativity and functionality</p>
+                <h2 className='text-center m-5 uppercase font-nunito text-xl font-bold'>The Outcomes</h2>
+              </div>
+
+              <div className='flex flex-col items-center justify-center bg-[#dbe3cd] text-[#543435] rounded-4xl w-80 -rotate-4 shadow-md shadow-[#c1bebe]'>
+                <img className=' w-60 mt-3 rounded-3xl' src='../src/assets/team.svg' />
+                <p className='w-68 text-center'>I recently completed the ALX Foundation program, where I strengthened my problem-solving abilities and gained experience in collaborative coding environments.</p>
+                <h2 className='text-center m-5 uppercase font-nunito text-xl font-bold'>On the road</h2>
+              </div>
+
+              <div className='flex flex-col items-center justify-center bg-[#ffbba2] text-[#543435] rounded-4xl w-80 -rotate-2 translate-x-2 shadow-xl shadow-[#c1bebe]'>
+                <img className=' w-60 mt-3 rounded-3xl' src='../src/assets/starts.svg' />
+                <p className='w-65 text-center'>Through dedicated self-study, online Learning Programs, and hands-on projects, I've honed my skills in HTML, CSS, JavaScript, React.</p>
+                <h2 className='text-center m-5 uppercase font-nunito text-xl font-bold'>Journey Starts</h2>
+              </div>
+
+               <div className='flex flex-col items-center justify-center bg-[#f2ddc3] text-[#543435] rounded-4xl w-80 -rotate-3 -translate-y-2 shadow-lg shadow-[#c1bebe]'>
+                <img className=' w-60 mt-3 rounded-3xl' src='../src/assets/twist.svg' />
+                <p className='w-65 text-center'>This curiosity turned into a passion for creating beautiful, user-friendly, and responsive websites focusing on simplicity, usability, and modern aesthetics.</p>
+                <h2 className='text-center m-5 uppercase font-nunito text-xl font-bold'>The twist</h2>
+              </div>
+
+              <div className='flex flex-col items-center justify-center bg-[#f9f9e3] text-[#543435] rounded-4xl w-80 rotate-3 translate-y-2 shadow-lg shadow-[#c1bebe]'>
+                <img className=' w-60 mt-3 rounded-3xl' src='../src/assets/passion.svg' />
+                <p className='w-65 text-center'>My journey into web development began with a curiosity for how websites work, and it quickly turned into a deep love for coding and design.</p>
+                <h2 className='text-center m-5 uppercase font-nunito text-xl font-bold'>The Start</h2>
+              </div>
+            </div>
+
+            {/* side cards container */}
+            <div className='side-cards  w-60 relative top-[40px] flex flex-col-reverse text-black'>
+              <span className='hidden bg-[#f9c1c1] transition-all duration-500'></span>
+              <span className='hidden bg-[#ffe2b4]'></span>
+              <span className='hidden bg-[#dbe3cd]'></span>
+              <span className='hidden bg-[#ffbba2]'></span>
+              <span className='hidden bg-[#f2ddc3]'></span>
+              <span className='hidden bg-[#f9f9e3] transition-all duration-1000'></span>
+            </div>
+        </div>
+        <Skills />
     </div>
   )
 }

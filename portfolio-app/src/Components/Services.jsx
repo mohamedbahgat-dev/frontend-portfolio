@@ -3,14 +3,14 @@ import { useState, useEffect, useRef } from 'react';
 
 function Services() {
 
-    const [isIntersecting, setIsIntersecting] = useState(false)
-    const ref = useRef(null)
 
     useEffect(()=> {
+        
         const observer = new IntersectionObserver((entries)=> {
             entries.forEach((entry)=> {
                 if(entry.isIntersecting){
                     entry.target.classList.add('show')
+
                 }else {
                     entry.target.classList.remove('show')
                 }
@@ -22,20 +22,15 @@ function Services() {
           
     }, [])
     
-    useEffect(()=>{
-        const el = document.getElementById('code')
-        console.log(el.getBoundingClientRect().top)
-    },[])
-   
 
   return (
-    <div className='border-b-1 border-b-gray-500' >
+    <div className='border-b-1 border-b-gray-500 mt-[600px]' >
         <h1 className='inline-block mt-10 mx-20 font-poppins text-[30px] font-light uppercase text-transparent bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text'>Services</h1>
         <div id='services' className='flex justify-center mt-5'>
             {/* moving icon */}
             
             {/* <img id='code' className='bg-white w-18 absolute -mt-8 -ml-10 rounded-full p-2' src='../src/assets/coding.png' /> */}
-            <svg id='code' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className=" w-12 bg-blue-700 absolute -mt-6 -ml-16 rounded-full p-2">
+            <svg id='code' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className=" w-12 bg-sky-500 absolute -mt-6 -ml-16 rounded-full p-2">
                 <path fillRule="evenodd" d="M14.447 3.026a.75.75 0 0 1 .527.921l-4.5 16.5a.75.75 0 0 1-1.448-.394l4.5-16.5a.75.75 0 0 1 .921-.527ZM16.72 6.22a.75.75 0 0 1 1.06 0l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 0 1 0-1.06Zm-9.44 0a.75.75 0 0 1 0 1.06L2.56 12l4.72 4.72a.75.75 0 0 1-1.06 1.06L.97 12.53a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
             </svg>
 
@@ -43,7 +38,7 @@ function Services() {
             <div className='timeline'>
               <div className='outer'> 
                 {/* from here add cards */}
-                <div ref={ref} className='card-container' id='firstPath'>
+                <div className='card-container' id='firstPath'>
                     <div className='card cv text-center font-poppins text-lg'>
                         <h2>Custom Website Development</h2> 
                     </div>
@@ -66,7 +61,7 @@ function Services() {
                     </div>
                 </div>  
                 {/* card 2 */}
-                <div ref={ref} className='card-container'>
+                <div className='card-container'>
                     <div className='card cv text-center font-poppins text-lg'>
                         <h2>Responsive Web Design</h2> 
                     </div>
@@ -91,7 +86,7 @@ function Services() {
                 </div>  
 
                 {/* card 3 */}
-                 <div ref={ref} className='card-container'>
+                 <div className='card-container'>
                     <div className='card cv text-center font-poppins text-lg'>
                         <h2>User Interface (UI) Development</h2> 
                     </div>
@@ -116,7 +111,7 @@ function Services() {
                </div>  
                {/* card 4 */}
 
-                 <div ref={ref} className='card-container'>
+                 <div className='card-container'>
                     <div className='card cv text-center font-poppins text-lg'>
                         <h2>Front-End Optimization</h2> 
                     </div>
@@ -142,7 +137,7 @@ function Services() {
 
                  {/* card 5 */}
 
-                 <div ref={ref} className='card-container'>
+                 <div className='card-container'>
                     <div className='card cv text-center font-poppins text-lg'>
                         <h2>Interactive Web Elements</h2> 
                     </div>
@@ -167,7 +162,7 @@ function Services() {
                 </div> 
 
                 {/* card 6 */}
-                <div ref={ref} className='card-container'>
+                <div className='card-container'>
                     <div className='card cv text-center font-poppins text-lg'>
                         <h2>Single-Page Applications (SPAs)</h2> 
                     </div>
