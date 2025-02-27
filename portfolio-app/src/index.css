@@ -212,8 +212,20 @@ a:hover {
 /* styling about component */
 
 .about-cards div {
-  position: absolute;
+  position: sticky;
+  width: 400px;
+  overflow: hidden;
+  height: 450px;
   top: 150px;
+}
+
+.about-cards h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
+}
+
+.about-cards p {
+  color: #061d33;
 }
 
 .about-cards div:hover {
@@ -237,13 +249,6 @@ a:hover {
 
 /* styling skills component */
 
-/* .moving-text {
-  mask: linear-gradient(90deg, transparent, white 10%, white 80%, transparent);
-  offset-path: path("M-187 -40C590 400 900.42 -165.76 1550 90.5");
-  offset-distance: 14%;
-  animation: move-text 5s linear infinite;
-} */
-
 .skills-container {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -256,7 +261,7 @@ a:hover {
 
   animation: unround-border 5s linear;
   animation-timeline: scroll();
-  animation-range: 2200px 3000px;
+  animation-range: 2300px 3350px;
 }
 
 .arrow {
@@ -269,7 +274,7 @@ a:hover {
 
 .wave {
   position: absolute;
-  top: 945px;
+  top: 960px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -289,7 +294,7 @@ a:hover {
 
 .wave-2 {
   position: absolute;
-  top: 880px;
+  top: 900px;
   left: 0;
   width: 100%;
   z-index: -1;
@@ -313,137 +318,90 @@ a:hover {
 }
 
 .skills img {
-  width: 100px;
+  width: 80px;
   /* filter: drop-shadow(0 0 10px rgba(174, 172, 172, 0.8)); */
 }
 
-.javascript {
-  border: 1px solid #2a2f3429;
-  padding: 50px;
-  border-radius: 67% 33% 67% 33% / 44% 66% 34% 56%;
-}
-
 .javascript-cover {
-  transform: translateY(-100px);
+  rotate: (-20deg);
   background-color: #f4f4e9d2;
-  border-radius: 67% 33% 61% 39% / 44% 66% 34% 56%;
-}
-
-.html {
-  border: 1px solid #2a2f3429;
-  padding: 50px;
-  border-radius: 39% 61% 33% 67% / 56% 35% 65% 44%;
+  border-radius: 50%;
+  filter: drop-shadow(1px 1px 3px rgba(145, 145, 145, 0.3));
+  box-shadow: inset 3px 1px 10px rgba(145, 145, 145, 0.2);
 }
 
 .html-cover {
   background-color: #f4f4e9d2;
-  border-radius: 48% 52% 42% 58% / 51% 38% 62% 49%;
-}
-
-.css {
-  border: 1px solid #2a2f3429;
-  padding: 50px;
-  border-radius: 58% 42% 52% 48% / 51% 53% 47% 49%;
+  border-radius: 50%;
+  filter: drop-shadow(1px 1px 3px rgba(145, 145, 145, 0.3));
+  box-shadow: inset 3px 1px 10px rgba(145, 145, 145, 0.2);
 }
 
 .css-cover {
-  transform: translateY(-150px);
   background-color: #f4f4e9d2;
-  border-radius: 50% 50% 40% 60% / 56% 49% 51% 44%;
-}
-
-.react {
-  border: 1px solid #2a2f3429;
-  padding: 50px;
-  border-radius: 72% 28% 23% 77% / 56% 49% 51% 44%;
+  border-radius: 50%;
+  filter: drop-shadow(1px 1px 3px rgba(145, 145, 145, 0.3));
+  box-shadow: inset 3px 1px 10px rgba(145, 145, 145, 0.2);
 }
 
 .react-cover {
   background-color: #f4f4e9d2;
-  border-radius: 65% 35% 35% 65% / 56% 49% 51% 44%;
+  border-radius: 50%;
+  filter: drop-shadow(1px 5px 3px rgba(145, 145, 145, 0.3));
+  box-shadow: inset 0px 4px 10px rgba(145, 145, 145, 0.2);
 }
 
 .git-cover {
-  transform: translateY(180px) translateX(-280px);
   background-color: #f4f4e9d2;
-  border-radius: 32% 68% 71% 29% / 43% 49% 51% 57%;
-}
-
-.git {
-  border: 1px solid #2a2f3429;
-  padding: 40px;
-  border-radius: 36% 64% 66% 34% / 43% 46% 54% 57%;
+  border-radius: 50%;
+  filter: drop-shadow(1px 5px 3px rgba(145, 145, 145, 0.4));
+  box-shadow: inset 5px 8px 10px rgba(145, 145, 145, 0.2);
 }
 
 .github-cover {
-  transform: translateY(200px);
   background-color: #f4f4e9b5;
-  border-radius: 32% 68% 71% 29% / 43% 49% 51% 57%;
+  border-radius: 50%;
+  filter: drop-shadow(3px 5px 3px rgba(145, 145, 145, 0.3));
+  box-shadow: inset 5px 4px 10px rgba(145, 145, 145, 0.4);
 }
 
-.github {
-  border: 1px solid #2a2f3429;
-  padding: 40px;
-  border-radius: 34% 66% 71% 29% / 43% 46% 54% 57%;
+.tailwind-cover {
+  background-color: #f4f4e9d2;
+  border-radius: 50%;
+  filter: drop-shadow(1px 5px 3px rgba(145, 145, 145, 0.3));
+  box-shadow: inset 3px 3px 10px rgba(33, 29, 29, 0.2);
 }
 
-.vite-cover {
-  transform: translateX(-100px) translateY(-80px);
-  background-color: #f4f4e9b5;
-  border-radius: 32% 68% 71% 29% / 43% 49% 51% 57%;
+.figma-cover {
+  background-color: #f4f4e9d2;
+  border-radius: 50%;
+  filter: drop-shadow(3px 5px 3px rgba(145, 145, 145, 0.3));
+  box-shadow: inset 5px 3px 10px rgba(145, 145, 145, 0.2);
 }
 
-.vite {
-  border: 1px solid #2a2f3429;
-  padding: 40px;
-  border-radius: 34% 66% 71% 29% / 43% 46% 54% 57%;
+.figma img {
+  width: 60px;
 }
 
-.javascript img,
-.html img,
-.css img,
-.react img {
+.github img {
+  width: 100px;
+}
+
+.git img {
+  width: 100px;
+}
+
+.javascript img {
+  border-radius: 30%;
+}
+
+.html img {
   width: 80px;
   border-radius: 20%;
 }
 
-.tailwind-cover {
-  transform: translateY(150px);
-  background-color: #f4f4e9d2;
-  border-radius: 36% 64% 26% 74% / 58% 46% 54% 42%;
-}
-
-.tailwind {
-  width: 180px;
-  height: 180px;
-  border: 1px solid #2a2f3429;
-  border-radius: 36% 64% 31% 69% / 55% 50% 50% 45%;
-}
-
-.figma-cover {
-  transform: translateY(-220px) translateX(-150px);
-  background-color: #f4f4e9d2;
-  border-radius: 66% 34% 47% 53% / 55% 60% 40% 45%;
-}
-
-.figma {
-  width: 180px;
-  height: 180px;
-  border: 1px solid #2a2f3429;
-  padding: 40px;
-  border-radius: 60% 40% 43% 57% / 55% 56% 44% 45%;
-}
-
-.figma img {
-  width: 75px;
-}
-
-.github img {
-  width: 80px;
-}
-
-.html img {
-  width: 70px;
+.tailwind img {
+  width: 100px;
 }
 
 .skills img:hover {
@@ -451,27 +409,28 @@ a:hover {
   scale: 105%;
 }
 
-.tech {
-  color: rgb(88, 83, 83);
-  text-transform: uppercase;
-  font-family: "vina sans";
-  font-size: 40px;
-}
-
 .tech span {
   border-bottom: 3px solid red;
 }
 
-.js-skills li {
-  padding: 30px;
-  border-radius: 30px;
-  font-family: "poppins";
-  color: white;
-  font-size: 15px;
-  text-align: start;
-  background-color: rgba(149, 147, 149, 0.2);
-  box-shadow: 1px 1px 2px rgba(73, 73, 73, 0.7);
+.hide-skills {
+  transform: translateX(-300px) translateY(-200px);
 }
+
+.details {
+  color: #424547;
+  font-family: "Manrope", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  filter: drop-shadow(3px 10px 5px rgba(155, 152, 152, 0.3));
+  box-shadow: inset 10px 10px 20px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* #js-details {
+  background-color: rgba(255, 227, 48, 0.8);
+}
+
+#html-details {
+  background-color: orange;
+} */
 
 /* styling projects section */
 
@@ -855,11 +814,12 @@ button {
     scale: 0.6;
   }
 
-  26.3%,
+  30%,
   100% {
     scale: 0.6;
     position: fixed;
     top: 30px;
+    z-index: 100;
   }
 }
 
@@ -871,4 +831,7 @@ button {
   100% {
     offset-distance: 100%;
   }
+}
+
+@keyframes animate-skills {
 }

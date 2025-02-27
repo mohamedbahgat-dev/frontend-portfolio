@@ -51,55 +51,53 @@ function About() {
     })
   })
 
+  
 
   return (
-    <div id='about' className=' h-[150vh] relative -top-80'>
+    <div id='about' className=' h-[150vh] relative '>
         <div className='flex flex-col items-center justify-center'>
-          <img className='absolute w-40 -top-[60px]' src='../src/assets/circle.png'/>
-          <h1 className='about-header inline-block text-3xl text-[#6e65f6] uppercase z-30'>About Me</h1>
-          {/* <img className='arrow w-20 mr-50 ' src='../src/assets/arrow.svg'/> */}
-          
-          
+          <h1 className='about-header inline-block text-5xl text-[#6e65f6] uppercase z-30'>About Me</h1> 
         </div>
         
         <div className='mt-20'>
+          
            {/* mian display cards container */}
-            <div className='about-cards flex justify-center items-center text-gray-400 '>
+            <div className='about-cards flex flex-col justify-center items-center text-gray-400 '>
 
-              <div className='flex flex-col items-center justify-center bg-[#f9c1c1] text-[#543435] rounded-4xl w-80 rotate-2 shadow-md shadow-[gray]'>
-                <img className=' w-60 mt-3 rounded-3xl' src='../src/assets/learn.svg' />
-                <p className='w-65 text-center'>When I'm not coding, you can find me Reading about and exploring new technologies, contributing to open-source projects, or learning a new skill.</p>
-                <h2 className='text-center m-5 uppercase font-nunito text-xl font-bold'>Never Stop Learning</h2>
+              <div className='flex flex-col items-center justify-center bg-[#f9c1c1] w-[420px] h-[500px]  rounded-4xl rotate-2 shadow-md shadow-[#c1bebe]'>
+                <img className=' w-90 h-60 mt-4  mb-4 border-2 border-[#f7a4a4] rounded-3xl' src='../src/assets/learn.svg' />
+                <p className='w-85 text-center'>When I'm not coding, you can find me Reading about and exploring new technologies, contributing to open-source projects, or learning a new skill.</p>
+                <h2 className='text-center m-4 px-15 leading-11 uppercase text-[#e06e6e] font-bold'>Never Stop Learning</h2>
               </div>
 
-               <div className='flex flex-col items-center justify-center bg-[#ffe2b4] text-[#543435] rounded-4xl w-80 -rotate-2 shadow-md shadow-[#c1bebe]'>
-                <img className=' w-60 mt-3 rounded-3xl' src='../src/assets/outcomes.svg' />
-                <p className='w-65 text-center'>I thrive on turning ideas into reality and enjoy the challenge of building modern, intuitive web experiences that combine creativity and functionality</p>
-                <h2 className='text-center m-5 uppercase font-nunito text-xl font-bold'>The Outcomes</h2>
+               <div className='flex flex-col items-center justify-center bg-[#ffe2b4] rounded-4xl w-[420px] h-[500px]  -rotate-2 shadow-md shadow-[#c1bebe]'>
+                <img className='w-90 mt-3 h-60 mb-5 border-2 rounded-3xl border-[#edc88b]' src='../src/assets/outcomes.svg' />
+                <p className='w-90 text-center'>I thrive on turning ideas into reality and enjoy the challenge of building modern, intuitive web experiences that combine creativity and functionality</p>
+                <h2 className='text-center m-5 uppercase text-[#e6a843] font-bold'>The Outcomes</h2>
               </div>
 
-              <div className='flex flex-col items-center justify-center bg-[#dbe3cd] text-[#543435] rounded-4xl w-80 -rotate-4 shadow-md shadow-[#c1bebe]'>
-                <img className=' w-60 mt-3 rounded-3xl' src='../src/assets/team.svg' />
-                <p className='w-68 text-center'>I recently completed the ALX Foundation program, where I strengthened my problem-solving abilities and gained experience in collaborative coding environments.</p>
-                <h2 className='text-center m-5 uppercase font-nunito text-xl font-bold'>On the road</h2>
+              <div className='flex flex-col items-center justify-center bg-[#dbe3cd] rounded-4xl w-[420px] h-[500px]  -rotate-4 shadow-md shadow-[#c1bebe]'>
+                <img className='w-90 mt-4 h-60 mb-5 border-2 rounded-3xl border-[#b6d089]' src='../src/assets/team.svg' />
+                <p className='w-90 text-center'>I recently completed the ALX Foundation program, where I strengthened my problem-solving abilities and gained experience in collaborative coding environments.</p>
+                <h2 className='text-center m-5 uppercase font-bold text-[#5b782a]'>On the road</h2>
               </div>
 
-              <div className='flex flex-col items-center justify-center bg-[#ffbba2] text-[#543435] rounded-4xl w-80 -rotate-2 translate-x-2 shadow-xl shadow-[#c1bebe]'>
-                <img className=' w-60 mt-3 rounded-3xl' src='../src/assets/starts.svg' />
-                <p className='w-65 text-center'>Through dedicated self-study, online Learning Programs, and hands-on projects, I've honed my skills in HTML, CSS, JavaScript, React.</p>
-                <h2 className='text-center m-5 uppercase font-nunito text-xl font-bold'>Journey Starts</h2>
+              <div className='flex flex-col items-center justify-center bg-[#ffbba2] rounded-4xl w-[420px] h-[500px]  -rotate-2 translate-x-2 shadow-xl shadow-[#c1bebe]'>
+                <img className=' w-90 mt-2 h-60 mb-5 border-2 border-[#f3a284] rounded-3xl' src='../src/assets/starts.svg' />
+                <p className='w-80 text-center'>Through dedicated self-study, online Learning Programs, and hands-on projects, I've honed my skills in HTML, CSS, JavaScript, React.</p>
+                <h2 className='text-center m-5 uppercase  font-bold text-[#e0683d]'>Journey Starts</h2>
               </div>
 
-               <div className='flex flex-col items-center justify-center bg-[#f2ddc3] text-[#543435] rounded-4xl w-80 -rotate-3 -translate-y-2 shadow-lg shadow-[#c1bebe]'>
-                <img className=' w-60 mt-3 rounded-3xl' src='../src/assets/twist.svg' />
-                <p className='w-65 text-center'>This curiosity turned into a passion for creating beautiful, user-friendly, and responsive websites focusing on simplicity, usability, and modern aesthetics.</p>
-                <h2 className='text-center m-5 uppercase font-nunito text-xl font-bold'>The twist</h2>
+               <div className='flex flex-col items-center justify-center bg-[#f2ddc3] rounded-4xl w-[420px] h-[500px]  -rotate-3 -translate-y-2 shadow-lg shadow-[#c1bebe]'>
+                <img className='w-90 mt-2 h-60 mb-5 border-2 border-[#d7bd9c] rounded-3xl' src='../src/assets/twist.svg' />
+                <p className='w-80 text-center'>This curiosity turned into a passion for creating beautiful, user-friendly, and responsive websites focusing on simplicity, usability, and modern aesthetics.</p>
+                <h2 className='text-center m-5 uppercase font-bold text-[#90714d]' >The twist</h2>
               </div>
 
-              <div className='flex flex-col items-center justify-center bg-[#f9f9e3] text-[#543435] rounded-4xl w-80 rotate-3 translate-y-2 shadow-lg shadow-[#c1bebe]'>
-                <img className=' w-60 mt-3 rounded-3xl' src='../src/assets/passion.svg' />
-                <p className='w-65 text-center'>My journey into web development began with a curiosity for how websites work, and it quickly turned into a deep love for coding and design.</p>
-                <h2 className='text-center m-5 uppercase font-nunito text-xl font-bold'>The Start</h2>
+              <div className=' flex flex-col items-center justify-center bg-[#f9f9e3] rounded-4xl w-[420px] h-[500px]  rotate-3 translate-y-2 shadow-lg shadow-[#c1bebe]'>
+                <img className='w-90 h-60 mb-5 border-2 border-[#efefad] rounded-3xl' src='../src/assets/passion.svg' />
+                <p className='w-75 text-center'>My journey into web development began with a curiosity for how websites work, and it quickly turned into a deep love for coding and design.</p>
+                <h2 className='text-center m-5 uppercase font-bold text-[#95955a]'>The Start</h2>
               </div>
             </div>
 

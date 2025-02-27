@@ -24,7 +24,7 @@ function Services() {
     
 
   return (
-    <div className='border-b-1 border-b-gray-500 mt-[600px]' >
+    <div className='border-b-1 border-b-gray-500 mt-[900px]' >
         <h1 className='inline-block mt-10 mx-20 font-poppins text-[30px] font-light uppercase text-transparent bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text'>Services</h1>
         <div id='services' className='flex justify-center mt-5'>
             {/* moving icon */}
