@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useRef } from 'react'
 import { useScroll } from 'framer-motion'
+import Footer from './Home/Footer'
 
 function Skills() {
 
@@ -14,14 +15,14 @@ function Skills() {
   })
 
 
-  // calling scroll func on textelement 
-  // useEffect(()=> {
-  //   scrollYProgress.on('change', e => {
+  //calling scroll func on textelement 
+  useEffect(()=> {
+    scrollYProgress.on('change', e => {
       
-  //     textScroll.current.setAttribute('startOffset',e *  -30 + '%' )
-  //   })
+      textScroll.current.setAttribute('startOffset',e *  -30 + '%' )
+    })
 
-  // },[])
+  },[])
 
 
 
@@ -142,22 +143,27 @@ function Skills() {
   
 
   return (
-    <div ref={containerScroll}  className='skills-container h-[150vh] mt-[1040px]'>
-
-      <div className=' flex flex-col justify-center items-center absolute top-[800px] w-full text-center pr-5'>    
-        <h2 className='skills-header text-4xl text-[#6e65f6] uppercase'><span className='text-base'>See my</span> skills</h2>
+    <div className='skills-root'>
+      <div className=' flex flex-col justify-center items-center mt-58  w-full  pr-5 '>    
+        <h2 className='skills-header text-5xl text-[#6e65f6] w-40 uppercase text-center z-30'> <span className='text-2xl '>See my</span> skills</h2>
       </div>
-       
+
       
-      {/* <svg width="1455" height="154" viewBox="0 0 1463 124" fill="none" xmlns="http://www.w3.org/2000/svg" className='moving-tap absolute top-[908px] overflow-hidden'>
-              <path id='text-path' d="M4.52585 60.4009C621.82 286.992 880.5 -110 1458.77 54.4438" stroke="none" stroke-width="17"/>
-              <text id='moving-text' stroke='#9470e7' fill='#9470e7' className='uppercase overflow-hidden'>
-                    <textPath href='#text-path' ref={textScroll} startOffset={'-30%'}>HTML . CSS . JAVASCRIPT . REACT . tailwind . Node.js . UX/UI . Web . Visuals . Animations . GIT . GitHub . DOM . HTML . CSS . JAVASCRIPT . REACT . tailwind . Node.js . UX/UI . Web . Visuals . Animations . GIT . GitHub . DOM</textPath>
-              </text>  
-       </svg> */}
+      <div>
+        <div className='skills-elipse w-85 h-85  absolute top-30 left-[38%]'></div> 
+        {/* <div className='skill-ball z-20'></div> */}
+      </div>
+
+      <div ref={containerScroll}  className='skills-container mt-[420px] mb-40 h-[120vh]'>
+          <svg width="1455" height="154" viewBox="0 0 1463 124" fill="none" xmlns="http://www.w3.org/2000/svg" className='moving-tap absolute top-[500px] overflow-hidden'>
+                  <path id='text-path' d="M4.52585 60.4009C621.82 286.992 880.5 -110 1458.77 54.4438" stroke="none" stroke-width="17"/>
+                  <text id='moving-text' stroke='#9470e7' fill='#9470e7' className='uppercase overflow-hidden'>
+                        <textPath href='#text-path' ref={textScroll} startOffset={'-30%'}>HTML . CSS . JAVASCRIPT . REACT . tailwind . Node.js . UX/UI . Web . Visuals . Animations . GIT . GitHub . DOM . HTML . CSS . JAVASCRIPT . REACT . tailwind . Node.js . UX/UI . Web . Visuals . Animations . GIT . GitHub . DOM</textPath>
+                  </text>  
+          </svg>
       
        
-       <div className='flex flex-col items-center justify-center'>
+         <div className='flex flex-col items-center justify-center'>
            
             <div className="wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -170,63 +176,57 @@ function Skills() {
                 </svg>
             </div>
             
-           
-            
-            <div className='skills absolute  top-[1050px] justify-items-center place-items-center grid grid-cols-3   h-[950px] '>
+            <div className='skills -mt-32 justify-items-center place-items-center grid grid-cols-3  h-[950px] '>
 
-                <div className="skill javascript-cover w-50 h-50 flex items-center justify-center self-start   ">
-                  <div className='javascript flex items-center justify-center'>
+                <div className="skill javascript-cover w-50 h-50 flex items-center justify-center self-start opacity-0  ">
+                  <div className='javascript flex items-center justify-center grayscale-100 hover:grayscale-0'>
                     <img src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'/>
                   </div>
                 </div>
                 
-                <div className="skill html-cover w-50 h-50 flex items-center justify-center self-start">
-                  <div className='html flex items-center justify-center'>
+                <div className="skill html-cover w-50 h-50 flex items-center justify-center self-start opacity-0">
+                  <div className='html flex items-center justify-center grayscale-100 hover:grayscale-0'>
                     <img src='../src/assets/html.svg' />
                   </div>
                 </div>
                
-                <div className="skill css-cover w-50 h-50 flex items-center justify-center self-start  " >
-                  <div className='css flex items-center justify-center' >
+                <div className="skill css-cover w-50 h-50 flex items-center justify-center self-start opacity-0 " >
+                  <div className='css flex items-center justify-center grayscale-100 hover:grayscale-0' >
                     <img src='https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg'/>
                   </div>
                 </div>
                 
-                <div className="skill react-cover  w-50 h-50 flex items-center justify-center self-start mr-61">
-                  <div className='react flex items-center justify-center' >
+                <div className="skill react-cover  w-50 h-50 flex items-center justify-center self-start mr-61 opacity-0">
+                  <div className='react flex items-center justify-center grayscale-100 hover:grayscale-0' >
                     <img src='https://cdn.worldvectorlogo.com/logos/react-2.svg' />
                   </div>
                 </div>
                 
-               
                 <div>
                     <h2 className='tech uppercase font-poppins text-[#6e65f6] font-semibold text-5xl self-end '>Skills&Tools </h2>
                 </div>
 
-                 {/* <div className='absolute w-[400px] h-[400px] ml-[460px] mb-35 rounded-full border-2 border-red-700'></div> */}
-
-
-                <div className="skill git-cover  w-50 h-50 flex justify-center items-center self-start  ml-63.5">
-                  <div className='git flex justify-center items-center'>
+                <div className="skill git-cover  w-50 h-50 flex justify-center items-center self-start ml-63.5 opacity-0">
+                  <div className='git flex justify-center items-center grayscale-100 hover:grayscale-0'>
                    <img  src='../src/assets/git.svg'/>
                   </div>
                 </div>
 
               
-               <div className="skill github-cover w-50 h-50 flex items-center justify-center self-end">
-                  <div className='github flex items-center justify-center'>
+               <div className="skill github-cover w-50 h-50 flex items-center justify-center self-end opacity-0">
+                  <div className='github flex items-center justify-center grayscale-100 hover:grayscale-0'>
                     <img  src='../src/assets/github.svg'/>
                   </div>
                </div>
                
-                <div className="skill tailwind-cover w-50 h-50 flex items-center justify-center self-end">
-                    <div className='tailwind flex items-center justify-center'>
+                <div className="skill tailwind-cover w-50 h-50 flex items-center justify-center self-end opacity-0">
+                    <div className='tailwind flex items-center justify-center grayscale-100 hover:grayscale-0'>
                       <img  src='../src/assets/tailwindcss.svg'/>
                     </div>
                 </div>
                 
-                <div className="skill figma-cover w-50 h-50 flex items-center justify-center self-end">
-                   <div className='figma flex justify-center items-center'>
+                <div className="skill figma-cover w-50 h-50 flex items-center justify-center self-end opacity-0">
+                   <div className='figma flex justify-center items-center grayscale-100 hover:grayscale-0'>
                      <img  src='https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg'/>
                    </div> 
                 </div>
@@ -234,7 +234,7 @@ function Skills() {
 
             
             {/* skills details */}
-            <div className='skill-details flex gap-10 w-[600px] text-sm text-center text-[#16134c] font-poppins mt-46  '>
+            <div className='skill-details absolute top-[923px] flex gap-10 w-[600px] text-sm text-center text-[#16134c] font-poppins  '>
 
                 <div className='skills-kit hidden  justify-center items-center gap-10 '>          
                     <ul id='js-details' className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
@@ -300,12 +300,30 @@ function Skills() {
                       <li>Proficient in using Figma for designing, prototyping, and collaborating on user interfaces and web applications.</li>
                       <li>Experienced in creating wireframes, mockups, and high-fidelity designs for websites.</li>
                       <li>Created interactive prototypes with transitions, animations, and clickable elements to demonstrate user flows and functionality.</li> 
-                  </ul>
-                </div>
-
-            </div>
-       </div>       
+                   </ul>
+                 </div>
+              </div>
+           
+            </div>  
+        </div>
+        <div className="flex flex-col items-center justify-center text-center mt-20 relative">
+           <h2 className="market-title z-10">You want a team player who never stop learning?
+            <a href="mailto:mohamedbahgat950@gmail.com" target="_blank">
+               <span className="inline-block text-xl align-middle ml-3 w-50 rounded-full bg-red-400 text-white py-3">Let's connect
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" className="size-7 inline-block ml-3 bg-white rounded-full p-1 ">
+                   <path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+                 </svg>
+               </span>
+            </a>           
+           </h2> 
+           <div className="w-50 h-50 absolute top-[25%] left-[43%] bg-[#d8ffb7] z-0 blur-[100px]" ></div>       
+        </div> 
+        <div>
+           <Footer />
+        </div>
+    
     </div>
+
   )
 }
 

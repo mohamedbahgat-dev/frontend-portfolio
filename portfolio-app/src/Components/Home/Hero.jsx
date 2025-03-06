@@ -3,13 +3,12 @@ import NavBar from './NavBar';
 
 function Hero() {
   return (
-    <div className='hero h-[130vh] mt-[100px] '>
-        <NavBar />
+    <div className='hero h-[150vh] mt-[100px] '>
            <div className = 'flex flex-col justify-center items-center mx-20 min-h-[70vh]'>
               <div className = 'flex flex-col justify-center items-center mt-5'>
 
                 <div className='flex justify-center gap-3'>
-                    <h2  className = 'name font-poppins text-[30px] uppercase text-transparent bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text '>Mohamed Bahgat</h2>
+                    <h2  className = 'name text-4xl uppercase font-semibold text-[#766cf9]  '>Mohamed Bahgat</h2>
                 </div>      
                 
                 <div className='frontend-container mt-10 '>

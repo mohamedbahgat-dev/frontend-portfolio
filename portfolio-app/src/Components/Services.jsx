@@ -1,7 +1,9 @@
+import { body } from 'framer-motion/client';
 import React from 'react'
 import { useState, useEffect, useRef } from 'react';
 
 function Services() {
+
 
 
     useEffect(()=> {
@@ -24,21 +26,35 @@ function Services() {
     
 
   return (
-    <div className='border-b-1 border-b-gray-500 mt-[900px]' >
-        <h1 className='inline-block mt-10 mx-20 font-poppins text-[30px] font-light uppercase text-transparent bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text'>Services</h1>
-        <div id='services' className='flex justify-center mt-5'>
-            {/* moving icon */}
+    <div>
+          <div className='night-stars absolute top-0 w-full h-[1100px] flex justify-center -z-1'>
+            <span className='planet absolute top-40 z-20 '></span>
+            <span className='planet-2 absolute top-40 z-10'></span>
+            <div className='w-[1000px] h-[400px] self-center bg-white mt-60 blur-3xl rounded-t-full'></div>
+            <div class="animated-stars z-0">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+                <div id="stars4"></div>
+            </div>
+          </div>
+          <div className='service-header absolute top-130 w-full flex justify-center  items-center'>
+                <h2 className='text-5xl text-[#6e65f6]'>See what I can do</h2>
+          </div>
+          <div className='absolute top-142 left-165 w-12 h-48 border-r border-b border-b-[#646161]'></div>
+          <div id='services' className=' flex justify-center mt-[400px]'>
             
-            {/* <img id='code' className='bg-white w-18 absolute -mt-8 -ml-10 rounded-full p-2' src='../src/assets/coding.png' /> */}
-            <svg id='code' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className=" w-12 bg-sky-500 absolute -mt-6 -ml-16 rounded-full p-2">
-                <path fillRule="evenodd" d="M14.447 3.026a.75.75 0 0 1 .527.921l-4.5 16.5a.75.75 0 0 1-1.448-.394l4.5-16.5a.75.75 0 0 1 .921-.527ZM16.72 6.22a.75.75 0 0 1 1.06 0l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 0 1 0-1.06Zm-9.44 0a.75.75 0 0 1 0 1.06L2.56 12l4.72 4.72a.75.75 0 0 1-1.06 1.06L.97 12.53a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
-            </svg>
-
-            {/* timeline --start-- */}
-            <div className='timeline'>
-              <div className='outer'> 
+            {/* moving icon */}
+                <svg id='code' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className=" w-0 bg-sky-500 absolute mt-83 -ml-16 rounded-full p-2">
+                    <path fillRule="evenodd" d="M14.447 3.026a.75.75 0 0 1 .527.921l-4.5 16.5a.75.75 0 0 1-1.448-.394l4.5-16.5a.75.75 0 0 1 .921-.527ZM16.72 6.22a.75.75 0 0 1 1.06 0l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 0 1 0-1.06Zm-9.44 0a.75.75 0 0 1 0 1.06L2.56 12l4.72 4.72a.75.75 0 0 1-1.06 1.06L.97 12.53a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
+                </svg>
+                {/* timeline --start-- */}
+                <div className='timeline mt-90'>
+                  <div className='outer'> 
                 {/* from here add cards */}
-                <div className='card-container' id='firstPath'>
+                
+                {/* card 1 */}
+                   <div className='card-container' id='firstPath'>
                     <div className='card cv text-center font-poppins text-lg'>
                         <h2>Custom Website Development</h2> 
                     </div>
@@ -183,10 +199,10 @@ function Services() {
                                 <img className='w-18 h-17 rounded-sm' src='../src/assets/vite.svg' />
                             </div>    
                         </div>
-                    </div>
-                </div>  
+                     </div>
+                  </div>  
+               </div>
              </div>
-           </div>
 
            {/* timeline --ends-- */}
         </div>
