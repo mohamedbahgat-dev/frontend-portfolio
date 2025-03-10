@@ -12,10 +12,10 @@ function Hero() {
                 </div>      
                 
                 <div className='frontend-container mt-10 '>
-                  <h3  className = 'frontend uppercase text-[100px] text-center text-gray-500 ' >frontend Developer</h3>
+                  <h3  className = 'frontend uppercase text-[6.8vw] text-center text-gray-500 ' >frontend Developer</h3>
                 </div>
             
-                <div className='elipse-container'>
+                <div className='elipse-container max-[600px]:hidden'>
                   <div className = 'elipse flex gap-10'>
                     <div className='shape-1 flex justify-center items-center'>
                       <img  src='../src/assets/html.svg'/>
@@ -33,7 +33,7 @@ function Hero() {
                       <img src='https://cdn.worldvectorlogo.com/logos/react-2.svg'/>
                     </div>
                     <div className='shape-6 flex justify-center items-center'>
-                      <img  src='https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg'/>
+                      <img className='' src='https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg'/>
                     </div> 
                   </div>
                 </div>  
@@ -51,7 +51,7 @@ function Hero() {
               </div>   
 
                  {/* hero icons  */}
-              <div className='absolute top-[750px] flex gap-10 '>
+              <div className='absolute top-[750px] max-w-[70%] flex justify-center items-center flex-wrap gap-10 '>
           
                   <img src="../src/assets/coding1.png" alt="" className="w-50" />
                   <img src="../src/assets/coding2.png" alt="" className="w-50" />
