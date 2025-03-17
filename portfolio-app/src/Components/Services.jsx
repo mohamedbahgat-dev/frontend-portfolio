@@ -61,7 +61,7 @@ function Services() {
                         <h2>Custom Website Development</h2> 
                     </div>
                     <div>
-                        <p className='hide absolute w-96 mt-15 font-thin'>Building custom websites from scratch tailored to your unique needs and brand identity.</p>
+                        <p className='hide description absolute w-96 mt-15 font-thin'>Building custom websites from scratch tailored to your unique needs and brand identity.</p>
                         <div className='icons absolute flex gap-5 mt-36'>
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm '>
                                 <img className='w-10' src='../src/assets/html.svg' />
@@ -84,7 +84,7 @@ function Services() {
                         <h2>Responsive Web Design</h2> 
                     </div>
                     <div >
-                        <p className='hide absolute w-[480px] mt-15 right-21 font-thin'>Creating visually appealing and mobile-friendly websites that work seamlessly across all devices (desktop, tablet, and mobile).</p>
+                        <p className='hide description absolute w-[480px] mt-15 max-[600px]:mt-10 max-[600px]:right-28 right-21 font-thin'>Creating visually appealing and mobile-friendly websites that work seamlessly across all devices (desktop, tablet, and mobile).</p>
                         <div className='icons absolute flex gap-5 mt-36 right-30'>
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm '>
                                 <img className='w-10' src='https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg' />
@@ -109,7 +109,7 @@ function Services() {
                         <h2>User Interface (UI) Development</h2> 
                     </div>
                     <div>
-                        <p className='hide absolute w-96 mt-15 font-thin'>Designing and implementing intuitive, user-friendly interfaces that enhance user experience.</p>
+                        <p className='hide description absolute w-96 mt-15 font-thin'>Designing and implementing intuitive, user-friendly interfaces that enhance user experience.</p>
                         <div className='icons absolute flex gap-5 mt-36'>
                             <div className='icon hide w-24 h-24  grid place-items-center  rounded-sm'>
                                 <img className='w-8' src='https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' />
@@ -134,7 +134,7 @@ function Services() {
                         <h2>Front-End Optimization</h2> 
                     </div>
                     <div >
-                        <p className='hide absolute w-[480px] mt-15 right-21 font-thin'>Improving website performance, speed, and accessibility for a better user experience.</p>
+                        <p className='hide description absolute w-[480px] mt-15 right-21  font-thin'>Improving website performance, speed, and accessibility for a better user experience.</p>
                         <div className='icons absolute flex gap-5 mt-36 right-30'>
                             <div className='icon hide w-24 h-24 pt-1 grid place-items-center rounded-sm '>
                                 <img className='w-10' src='https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg' />
@@ -160,7 +160,7 @@ function Services() {
                         <h2>Interactive Web Elements</h2> 
                     </div>
                     <div>
-                        <p className='hide absolute w-96 mt-15 font-thin'>Adding dynamic and interactive features like animations, sliders, and forms to engage users.</p>
+                        <p className='hide description absolute w-96 mt-15 font-thin'>Adding dynamic and interactive features like animations, sliders, and forms to engage users.</p>
                         <div className='icons absolute flex gap-5 mt-36'>
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm '>
                                 <img className='w-12 rounded-lg' src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' />
@@ -185,7 +185,7 @@ function Services() {
                         <h2>Single-Page Applications (SPAs)</h2> 
                     </div>
                     <div >
-                        <p className='hide absolute w-[450px] mt-15 right-28 font-thin'>Developing fast and efficient SPAs for seamless user navigation and interaction.</p>
+                        <p className='hide description absolute w-[450px] mt-15 right-28 font-thin'>Developing fast and efficient SPAs for seamless user navigation and interaction.</p>
                         <div className='icons absolute flex gap-5 mt-36 right-30'>
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm '>
                                 <img className='w-12' src='https://cdn.worldvectorlogo.com/logos/react-2.svg' />
@@ -207,7 +207,7 @@ function Services() {
              </div>
            {/* timeline --ends-- */}
         </div>
-         <div className="flex flex-col items-center justify-center text-center mt-20 relative">
+         <div className=" slogan flex flex-col items-center justify-center text-center mt-20 relative">
            <h2 className="market-title z-10">You want an elegant, modern and responsive website?
             <a href="mailto:mohamedbahgat950@gmail.com" target="_blank">
                <span className="inline-block text-xl align-middle ml-3 w-50 rounded-full bg-red-400 text-white py-3">Let's connect

@@ -28,75 +28,79 @@ function Skills() {
 
   // calling scroll function on skills elements
   useEffect(()=> {
-    const eles = document.querySelectorAll('.skills .skill')
+    const mediaQuery = window.matchMedia("(min-width:992px)");
+   
+    const eles = document.querySelectorAll('.skills .skill');
    
     
     scrollYProgress.on('change', e => {
      
       eles.forEach((ele, i)=> {
 
-      if (i === 0) {
-        ele.style.transform = `translate(${e * 210 }px , ${e *  150 }px)`
-        ele.style.rotate = `${ (Math.sqrt(e) * 10 + 2 ) - 10}deg`
-        ele.style.opacity = `${ e * 0.85}`
+      if(mediaQuery.matches ) {
+         
+          if (i === 0) {
+          ele.style.transform = `translate(${e * 210 }px , ${e *  150 }px)`
+          ele.style.rotate = `${ (Math.sqrt(e) * 10 + 2 ) - 10}deg`
+          ele.style.opacity = `${ e * 0.85}`
+          
+      
+        }
+
+        else if (i === 1){
+          ele.style.transform = `translateY(${e *  60 }px)`
+          ele.style.opacity = `${ e * 0.85}`
         
-    
-      }
 
-      else if (i === 1){
-        ele.style.transform = `translateY(${e *  60 }px)`
-        ele.style.opacity = `${ e * 0.85}`
-       
+        }
 
-      }
+        else if (i === 2){
+          ele.style.transform = `translate(${e * - 200 }px ,${e *  165 }px)`
+          ele.style.opacity = `${ e * 0.85}`  
+          ele.style.rotate = `${ - (Math.sqrt(e) * 10 + 2 ) + 14}deg`
 
-      else if (i === 2){
-        ele.style.transform = `translate(${e * - 200 }px ,${e *  165 }px)`
-        ele.style.opacity = `${ e * 0.85}`  
-        ele.style.rotate = `${ - (Math.sqrt(e) * 10 + 2 ) + 14}deg`
+        }
 
-      }
+        else if (i === 3){
+          ele.style.transform = `translate(${e * 230 }px ,${e *  80 }px)`
+          ele.style.opacity = `${ e * 0.85}`
+        
+          ele.style.rotate = `${ - (Math.sqrt(e) * 10 + 2 ) + 10}deg`
 
-      else if (i === 3){
-        ele.style.transform = `translate(${e * 230 }px ,${e *  80 }px)`
-        ele.style.opacity = `${ e * 0.85}`
-       
-        ele.style.rotate = `${ - (Math.sqrt(e) * 10 + 2 ) + 10}deg`
+        }
 
-      }
+        else if (i === 4){
+          ele.style.transform = `translate(${e * -235 }px ,${e *  63 }px)`
+          ele.style.opacity = `${ e * 0.95}`
 
-      else if (i === 4){
-        ele.style.transform = `translate(${e * -235 }px ,${e *  63 }px)`
-        ele.style.opacity = `${ e * 0.95}`
+          ele.style.rotate = `${  (Math.sqrt(e) * 10 + 2 ) - 14}deg`
 
-        ele.style.rotate = `${  (Math.sqrt(e) * 10 + 2 ) - 14}deg`
+        }
 
-      }
+        else if (i === 5){
+          ele.style.transform = `translate(${e *  210 }px , ${e * - 150 }px)`
+          ele.style.rotate = `${ (Math.sqrt(e) * 10 + 2 ) - 10}deg`
+          ele.style.opacity = `${ e * 0.85}`
+        
 
-      else if (i === 5){
-        ele.style.transform = `translate(${e *  210 }px , ${e * - 150 }px)`
-        ele.style.rotate = `${ (Math.sqrt(e) * 10 + 2 ) - 10}deg`
-        ele.style.opacity = `${ e * 0.85}`
-      
+        }
 
-      }
+        else if (i === 6){
+          ele.style.transform = `translateY(${e *  - 60 }px)`
+          ele.style.opacity = `${ e * 0.85}`
+        
 
-      else if (i === 6){
-        ele.style.transform = `translateY(${e *  - 60 }px)`
-        ele.style.opacity = `${ e * 0.85}`
-       
+        }
 
-      }
+        else if (i === 7){
+          ele.style.transform = `translate(${e * - 220 }px ,${e * - 130 }px)`
+          ele.style.opacity = `${ e * 0.85}`
+        
+          ele.style.rotate = `${ - (Math.sqrt(e) * 10 + 2 ) + 14}deg`
 
-      else if (i === 7){
-        ele.style.transform = `translate(${e * - 220 }px ,${e * - 130 }px)`
-        ele.style.opacity = `${ e * 0.85}`
-       
-        ele.style.rotate = `${ - (Math.sqrt(e) * 10 + 2 ) + 14}deg`
+        }
 
       }
-
-      
     })
  })
 
@@ -148,22 +152,22 @@ function Skills() {
         <h2 className='skills-header text-5xl text-[#6e65f6] w-40 uppercase text-center z-30'> <span className='text-2xl '>See my</span> skills</h2>
       </div>
 
-      
+      {/* sun shape */}
       <div>
-        <div className='skills-elipse w-85 h-85  absolute top-30 left-[38%]'></div> 
+        <div className='skills-elipse'></div> 
         {/* <div className='skill-ball z-20'></div> */}
       </div>
 
       <div ref={containerScroll}  className='skills-container mt-[420px] mb-40 h-[120vh]'>
-          <svg width="1455" height="154" viewBox="0 0 1463 124" fill="none" xmlns="http://www.w3.org/2000/svg" className='moving-tap absolute top-[500px] overflow-hidden'>
+          <svg width="1455" height="154" viewBox="0 0 1463 124" fill="none" xmlns="http://www.w3.org/2000/svg" className='moving-tap absolute top-[500px] overflow-hidden max-[600px]:hidden min-[600px]:hidden min-[992px]:block'>
                   <path id='text-path' d="M4.52585 60.4009C621.82 286.992 880.5 -110 1458.77 54.4438" stroke="none" stroke-width="17"/>
-                  <text id='moving-text' stroke='#9470e7' fill='#9470e7' className='uppercase overflow-hidden'>
+                  <text id='moving-text' stroke='#9470e7' fill='#9470e7' className='uppercase overflow-hidden min-[992px]:hidden'>
                         <textPath href='#text-path' ref={textScroll} startOffset={'-30%'}>HTML . CSS . JAVASCRIPT . REACT . tailwind . Node.js . UX/UI . Web . Visuals . Animations . GIT . GitHub . DOM . HTML . CSS . JAVASCRIPT . REACT . tailwind . Node.js . UX/UI . Web . Visuals . Animations . GIT . GitHub . DOM</textPath>
                   </text>  
           </svg>
       
        
-         <div className='flex flex-col items-center justify-center'>
+         <div className='flex flex-col items-center justify-center '>
            
             <div className="wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -176,7 +180,7 @@ function Skills() {
                 </svg>
             </div>
             
-            <div className='skills -mt-32 justify-items-center place-items-center grid grid-cols-3  h-[950px] '>
+            <div className='skills min-[992]:-mt-32 justify-items-center place-items-center grid grid-cols-3  min-[992px]:h-[950px] '>
 
                 <div className="skill javascript-cover w-50 h-50 flex items-center justify-center self-start opacity-0  ">
                   <div className='javascript flex items-center justify-center grayscale-100 hover:grayscale-0'>
@@ -306,17 +310,17 @@ function Skills() {
            
             </div>  
         </div>
-        <div className="flex flex-col items-center justify-center text-center mt-20 relative">
+        <div className=" slogan flex flex-col items-center justify-center text-center mt-20  relative">
            <h2 className="market-title z-10">You want a team player who never stop learning?
             <a href="mailto:mohamedbahgat950@gmail.com" target="_blank">
-               <span className="inline-block text-xl align-middle ml-3 w-50 rounded-full bg-red-400 text-white py-3">Let's connect
+               <span className="inline-block text-xl align-middle ml-3 w-50 rounded-full bg-red-400 text-white mt-2 py-3">Let's connect
                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" className="size-7 inline-block ml-3 bg-white rounded-full p-1 ">
                    <path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
                  </svg>
                </span>
             </a>           
            </h2> 
-           <div className="w-50 h-50 absolute top-[25%] left-[43%] bg-[#d8ffb7] z-0 blur-[100px]" ></div>       
+           <div className="w-50 h-50 absolute top-[25%] left-[40%] bg-[#d8ffb7] z-0 blur-[100px]" ></div>       
         </div> 
         <div>
            <Footer />

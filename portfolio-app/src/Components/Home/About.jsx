@@ -4,9 +4,9 @@ import Footer from "./Footer";
 function About() {
   
   return (
-    <div id='about' className=' h-[130vh] relative'>
+    <div id='about' className=' h-[130vh] relative max-[600px]:mt-10'>
         <div className='flex flex-col items-center justify-center'>
-          <h1 className='about-header  text-4xl font-semibold text-[#6e65f6] uppercase '>About Me</h1> 
+          <h1 className='about-header  text-4xl font-semibold text-[#6e65f6] uppercase  '>About Me</h1> 
         </div>
         
         <div className='mt-20'>
@@ -53,17 +53,17 @@ function About() {
 
         </div>
         
-        <div className="flex flex-col items-center justify-center text-center mt-60 relative">
+        <div className="slogan flex flex-col items-center justify-center text-center mt-60 relative">
            <h2 className="market-title">You want a custom website that fit your business?
             <a href="mailto:mohamedbahgat950@gmail.com" target="_blank">
-               <span className="inline-block text-xl align-middle ml-3 w-50 rounded-full bg-red-400 text-white py-3">Let's connect
+               <span className="inline-block text-xl align-middle ml-3 w-50 rounded-full bg-red-400 text-white py-3 ">Let's connect
                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" className="size-7 inline-block ml-3 bg-white rounded-full p-1 ">
                    <path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
                  </svg>
                </span>
             </a>           
            </h2> 
-           <div className="w-50 h-50 absolute top-[25%] left-[43%] bg-yellow-300 -z-1 blur-[100px]" ></div>       
+           <div className="w-50 max-[600px]:w-20 h-50 absolute top-[25%]  max-[600px]:left-[15%]  bg-yellow-300 -z-1 blur-[100px]" ></div>       
          
         </div> 
         
