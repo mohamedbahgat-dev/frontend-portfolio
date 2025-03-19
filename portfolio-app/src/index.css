@@ -1350,7 +1350,7 @@ button:visited {
     left: 9%;
     width: 80%;
     rotate: 180deg;
-    transform: rotate(-30deg);
+    transform: rotateZ(-30deg);
   }
 
   .shine {
@@ -1573,7 +1573,6 @@ button:visited {
     left: 6%;
     width: 78%;
     rotate: 180deg;
-    transform: rotate(-28deg);
   }
 
   .shine {
@@ -1730,10 +1729,9 @@ button:visited {
 
   .elipse {
     bottom: 43%;
-    left: 22%;
+    left: 21%;
     width: 55%;
-    rotate: 180deg;
-    transform: rotate(-20deg);
+    rotate: 185deg;
     border-bottom-width: -10px;
   }
 
