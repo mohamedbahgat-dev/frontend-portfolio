@@ -80,11 +80,11 @@ button:visited {
 
 .name {
   position: absolute;
-  top: 10;
+
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  animation: stick-headers 3s linear;
+  /* animation: stick-headers 3s linear;
   animation-timeline: scroll();
-  animation-range: 120px 100vh;
+  animation-range: 120px 100vh; */
 }
 
 .frontend-container {
