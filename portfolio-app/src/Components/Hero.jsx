@@ -14,7 +14,7 @@ function Hero() {
                 
                 {/* my name  */}
                 <div className='flex justify-center gap-3'>
-                    <h2  className = 'name uppercase font-semibold text-[#766cf9] max-[600px]:top-30 min-[600px]:top-35 min-[600px]:text-[20px] min-[768px]:top-35 min-[768px]:text-[25px]'>Mohamed Bahgat</h2>
+                    <h2  className = 'name uppercase font-semibold text-[#766cf9] max-[600px]:top-[140px] min-[600px]:top-[140px] min-[600px]:text-[20px] min-[768px]:top-[150px] min-[768px]:text-[25px] min-[992px]:top-[150px]'>Mohamed Bahgat</h2>
                 </div>      
                 
                 {/* front-end banner */}
