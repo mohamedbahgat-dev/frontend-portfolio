@@ -98,7 +98,7 @@ button:visited {
   left: 22%;
   width: 55%;
   rotate: 180deg;
-  transform: rotateZ(-18deg);
+  transform: rotate(-18deg);
   border-bottom-color: rgb(99, 203, 200);
   border-bottom-width: 0px;
   height: 16%;
@@ -1031,7 +1031,7 @@ button:visited {
     left: 2.6%;
     width: 90%;
     rotate: 180deg;
-    transform: rotateZ(-30deg);
+    transform: rotate(-30deg);
     border-bottom-width: -10px;
   }
 
@@ -1350,7 +1350,7 @@ button:visited {
     left: 9%;
     width: 80%;
     rotate: 180deg;
-    transform: rotateZ(-30deg);
+    transform: rotate(-30deg);
   }
 
   .shine {
@@ -1573,7 +1573,7 @@ button:visited {
     left: 6%;
     width: 78%;
     rotate: 180deg;
-    transform: rotateZ(-28deg);
+    transform: rotate(-28deg);
   }
 
   .shine {
@@ -1733,7 +1733,7 @@ button:visited {
     left: 22%;
     width: 55%;
     rotate: 180deg;
-    transform: rotateZ(-20deg);
+    transform: rotate(-20deg);
     border-bottom-width: -10px;
   }
 

@@ -15,10 +15,7 @@ function Hero() {
                 {/* my name  */}
                 <div className='flex justify-center gap-3'>
                     <h2  className = 'name uppercase font-semibold text-[#766cf9] max-[600px]:top-30 min-[600px]:top-35 min-[600px]:text-[20px] min-[768px]:top-35 min-[768px]:text-[25px]'>Mohamed Bahgat</h2>
-                </div>   
-                
-                {/* custome cursor effect */}
-                {/* <div className='cursor-name h-5 w-5 bg-red-600 rounded-full'></div>    */}
+                </div>      
                 
                 {/* front-end banner */}
                 <div className='frontend-container mt-10'>
