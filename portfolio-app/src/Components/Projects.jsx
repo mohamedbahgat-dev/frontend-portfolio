@@ -83,8 +83,8 @@ function Projects() {
                <div className='project-container flex justify-center items-center max-w-full gap-10'>
                   <div className='project-video todo-video hidden absolute justify-center items-center left-60 top-110  -rotate-5 self-start max-[600px]:h-30 max-[600px]:w-30  max-[600px]:top-80 '>               
                         <video className='rounded-2xl' width="150" height="140" autoplay='true'  muted='true' loop >
-                          <source src="../src/assets/todoVideo.mp4" type="video/mp4" />
-                          <source src="todo-video.ogg" type="video/ogg" />
+                          <source src="/assets/todoVideo.mp4" type="video/mp4" />
+                          <source src="/assets/todoVideo.ogg" type="video/ogg" />
                         </video>                   
                   </div>
                   <div className='project-planet todo-project opacity-5 w-[500px] h-[500px] flex items-center justify-center rounded-full z-10'>
@@ -105,15 +105,15 @@ function Projects() {
                   <div className='hidden tools todo-tools absolute font-poppins flex-col justify-center items-center  min-w-100 right-30  max-[600px]:top-190 max-[600px]:flex-row max-[600px]:right-0 '>
                     <div className='flex items-center  justify-center self-start mb-20 max-[600px]:mb-0'>
                        <video className='rounded-xl -rotate-3' width="240" height="350" autoplay='true'  muted='true' loop >
-                           <source src="../src/assets/todoVideo2.mp4" type="video/mp4" />
+                           <source src="/assets/todoVideo2.mp4" type="video/mp4" />
                            
                        </video> 
                     </div>
                     <div className='flex items-center justify-center self-end  '>
-                         <img className='w-50 h-30 max-[600px]:w-60 max-[600px]:h-20 max-[600px]:mr-20 rounded-xl -rotate-4' src='../src/assets/todolog-img.png'/>
+                         <img className='w-50 h-30 max-[600px]:w-60 max-[600px]:h-20 max-[600px]:mr-20 rounded-xl -rotate-4' src='/assets/todolog-img.png'/>
                     </div>
                     <div className='flex items-center justify-center self-start mt-20 mr-50 max-[600px]:mr-0 max-[600px]:mb-20'>
-                         <img className='w-50 h-30 max-[600px]:w-70 max-[600px]:h-20 rounded-xl ' src='../src/assets/todoregi-img.png'/>
+                         <img className='w-50 h-30 max-[600px]:w-70 max-[600px]:h-20 rounded-xl ' src='/assets/todoregi-img.png'/>
                     </div>
                   </div>
               </div>
@@ -125,7 +125,7 @@ function Projects() {
 
                   <div className='project-video hidden absolute left-50 mt-30 rounded-xl rotate-2 self-start max-[600px]:h-30 max-[600px]:w-50  max-[600px]:top-190'>               
                         <video className='rounded-2xl' width="250" height="540" autoplay='true'  muted='true' loop >
-                          <source src="../src/assets/movieMania2.mp4" type="video/mp4" />
+                          <source src="/assets/movieMania2.mp4" type="video/mp4" />
                         </video>                   
                   </div>
                   
@@ -147,15 +147,15 @@ function Projects() {
                   <div className='hidden tools movie-tools absolute font-poppins flex-col justify-center items-center min-w-100 right-30 max-[600px]:top-330 max-[600px]:flex-row max-[600px]:right-0'>
                     <div className='flex items-center  justify-center self-start mb-20 mr-40 max-[600px]:mb-0 max-[600px]:w-80 max-[600px]:mr-0'>
                        <video className='rounded-xl -rotate-3' width="240" height="350" autoplay='true'  muted='true' loop >
-                           <source src="../src/assets/movieMania3.mp4" type="video/mp4" />
+                           <source src="/assets/movieMania3.mp4" type="video/mp4" />
                            
                        </video> 
                     </div>
                     <div className='flex items-center justify-center self-end '>
-                         <img className='w-50 h-30 max-[600px]:w-60 max-[600px]:h-20 max-[600px]:mr-20 rounded-xl -rotate-4' src='../src/assets/movieMania-img.png'/>
+                         <img className='w-50 h-30 max-[600px]:w-60 max-[600px]:h-20 max-[600px]:mr-20 rounded-xl -rotate-4' src='/assets/movieMania-img.png'/>
                     </div>
                     <div className='flex items-center justify-center self-start mt-20 mr-50 max-[600px]:mr-0 max-[600px]:mb-30 max-[600px]:mt-0'>
-                         <img className='w-50 h-30 max-[600px]:w-70 max-[600px]:h-20 rounded-xl ' src='../src/assets/moviemania-img-2.png'/>
+                         <img className='w-50 h-30 max-[600px]:w-70 max-[600px]:h-20 rounded-xl' src='/assets/moviemania-img-2.png'/>
                     </div>
                   </div>
                   
@@ -169,7 +169,7 @@ function Projects() {
 
                   <div className='project-video hidden absolute left-50 mt-30 rounded-2xl rotate-2 self-start max-[600px]:h-40 max-[600px]:w-50  max-[600px]:top-330'>               
                         <video className='rounded-4xl' width="250" height="540" autoplay='true'  muted='true' loop >
-                          <source src="../src/assets/githubSearch.mp4" type="video/mp4" />
+                          <source src="/assets/githubSearch.mp4" type="video/mp4" />
                         </video>                   
                   </div>
                 
@@ -190,13 +190,13 @@ function Projects() {
 
                   <div className='hidden tools github-tools absolute font-poppins flex-col justify-center items-center  min-w-100 right-30 max-[600px]:top-470 max-[600px]:flex-row max-[600px]:right-0'>
                     <div className='flex items-center  justify-center self-start mb-20'>
-                         <img className='w-50 h-30 rounded-xl -rotate-4' src='../src/assets/githubSearch2.png'/>
+                         <img className='w-50 h-30 rounded-xl -rotate-4' src='/assets/githubSearch2.png'/>
                     </div>
                     <div className='flex items-center justify-center self-end '>
-                         <img className='w-50 h-30 max-[600px]:w-60 max-[600px]:h-20 max-[600px]:mr-20 rounded-xl -rotate-4' src='../src/assets/githubsearch.png'/>
+                         <img className='w-50 h-30 max-[600px]:w-60 max-[600px]:h-20 max-[600px]:mr-20 rounded-xl -rotate-4' src='/assets/githubsearch.png'/>
                     </div>
                     <div className='flex items-center justify-center self-start mt-10 -rotate-3 max-[600px]:mr-0'>
-                         <img className='w-40 h-80 max-[600px]:w-40 max-[600px]:h-30 rounded-xl ' src='../src/assets/githubSearch.jpg'/>
+                         <img className='w-40 h-80 max-[600px]:w-40 max-[600px]:h-30 rounded-xl ' src='/assets/githubSearch.jpg'/>
                     </div>
                   </div>
                 </div>              

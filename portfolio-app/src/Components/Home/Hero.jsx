@@ -29,7 +29,7 @@ function Hero() {
                 <div className='elipse-container'>
                   <div className = 'elipse flex gap-10'>
                     <div className='shape shape-1 flex justify-center items-center'>
-                      <img  src='../src/assets/html.svg'/>
+                      <img  src='/assets/html.svg'/>
                     </div>
                     <div className='shape shape-2 flex justify-center items-center'>
                       <img src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'/>

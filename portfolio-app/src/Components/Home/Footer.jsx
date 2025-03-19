@@ -11,7 +11,7 @@ function Footer() {
                   <a href="#" className="fa fa-telegram border-1 rounded-full w-10 h-10 px-2.5 py-2.5"></a>
                 </div>
                 <h3 className='text-xl font-thin max-[600px]:w-70 text-center'>&copy;2025 ALL rights Reserved Mohamed Bahgat</h3>   
-                <h3 className='flex items-center text-sm border border-gray-900 rounded-r-full rounded-l-full px-5 py-2'>Created By <img className='w-10 mr-1' src='../src/assets/mylogo.svg' /><h4> Mohamed Bahgat</h4></h3>
+                <h3 className='flex items-center text-sm border border-gray-900 rounded-r-full rounded-l-full px-5 py-2'>Created By <img className='w-10 mr-1' src='/assets/mylogo.svg' /><h4> Mohamed Bahgat</h4></h3>
          </div>
 
     </div>

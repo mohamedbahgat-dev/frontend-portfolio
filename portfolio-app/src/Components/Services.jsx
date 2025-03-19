@@ -64,7 +64,7 @@ function Services() {
                         <p className='hide description absolute w-96 mt-15 font-thin'>Building custom websites from scratch tailored to your unique needs and brand identity.</p>
                         <div className='icons absolute flex gap-5 mt-36'>
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm '>
-                                <img className='w-10' src='../src/assets/html.svg' />
+                                <img className='w-10' src='/assets/html.svg' />
                             </div>
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm '>
                                 <img className='w-10' src='https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg' />
@@ -90,14 +90,14 @@ function Services() {
                                 <img className='w-10' src='https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg' />
                             </div>
                             <div className='icon hide w-24 h-24 grid place-items-center  rounded-sm'>
-                                <img className='w-12 h-12 rounded-lg' src='../src/assets/media.png' />
+                                <img className='w-12 h-12 rounded-lg' src='/assets/media.png' />
                             </div>
                             
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm '>
-                                <img className='w-12 h-12 rounded-lg' src='../src/assets/flexbox.jpg' />
+                                <img className='w-12 h-12 rounded-lg' src='/assets/flexbox.jpg' />
                             </div>
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm'>
-                                <img className='w-12 h-12 rounded-lg' src='../src/assets/grid.jpg' />
+                                <img className='w-12 h-12 rounded-lg' src='/assets/grid.jpg' />
                             </div>    
                         </div>
                     </div>
@@ -140,7 +140,7 @@ function Services() {
                                 <img className='w-10' src='https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg' />
                             </div>
                             <div className='icon hide w-24 h-24 pt-1 grid place-items-center  rounded-sm'>
-                                <img className='w-12 h-12' src='../src/assets/webvitals.png' />
+                                <img className='w-12 h-12' src='/assets/webvitals.png' />
                             </div>
                             
                             <div className='icon hide w-24 h-24 pt-1 grid place-items-center rounded-sm '>
@@ -156,7 +156,7 @@ function Services() {
                  {/* card 5 */}
 
                  <div className='card-container'>
-                    <div className='card cv text-center font-poppins text-lg'>
+                    <div className='card text-center font-poppins text-lg'>
                         <h2>Interactive Web Elements</h2> 
                     </div>
                     <div>
@@ -169,7 +169,7 @@ function Services() {
                                 <img className='w-12' src='https://cdn.worldvectorlogo.com/logos/react-2.svg' />
                             </div>
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm'>
-                                <img className='w-12 h-12 rounded-md' src='../src/assets/greenstock.jpg' />
+                                <img className='w-12 h-12 rounded-md' src='/assets/greenstock.jpg' />
                             </div>
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm '>
                                 <img className='w-12' src='https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg' />
@@ -195,10 +195,10 @@ function Services() {
                             </div>
                             
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm '>
-                                <img className='w-12 rounded-sm' src='../src/assets/reactrouter.png' />
+                                <img className='w-12 rounded-sm' src='/assets/reactrouter.png' />
                             </div>
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm'>
-                                <img className='w-12 h-12 rounded-sm' src='../src/assets/vite.svg' />
+                                <img className='w-12 h-12 rounded-sm' src='/assets/vite.svg' />
                             </div>    
                         </div>
                      </div>

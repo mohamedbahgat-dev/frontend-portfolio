@@ -190,7 +190,7 @@ function Skills() {
                 
                 <div className="skill html-cover w-50 h-50 flex items-center justify-center self-start opacity-0">
                   <div className='html flex items-center justify-center grayscale-100 hover:grayscale-0'>
-                    <img src='../src/assets/html.svg' />
+                    <img src='/assets/html.svg' />
                   </div>
                 </div>
                
@@ -212,20 +212,20 @@ function Skills() {
 
                 <div className="skill git-cover  w-50 h-50 flex justify-center items-center self-start ml-63.5 opacity-0">
                   <div className='git flex justify-center items-center grayscale-100 hover:grayscale-0'>
-                   <img  src='../src/assets/git.svg'/>
+                   <img  src='/assets/git.svg'/>
                   </div>
                 </div>
 
               
                <div className="skill github-cover w-50 h-50 flex items-center justify-center self-end opacity-0">
                   <div className='github flex items-center justify-center grayscale-100 hover:grayscale-0'>
-                    <img  src='../src/assets/github.svg'/>
+                    <img  src='/assets/github.svg'/>
                   </div>
                </div>
                
                 <div className="skill tailwind-cover w-50 h-50 flex items-center justify-center self-end opacity-0">
                     <div className='tailwind flex items-center justify-center grayscale-100 hover:grayscale-0'>
-                      <img  src='../src/assets/tailwindcss.svg'/>
+                      <img  src='/assets/tailwindcss.svg'/>
                     </div>
                 </div>
                 
