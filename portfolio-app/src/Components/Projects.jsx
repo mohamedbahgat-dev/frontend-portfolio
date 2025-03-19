@@ -29,26 +29,26 @@ function Projects() {
   
 
     useEffect(()=> {
-        const projects = document.querySelectorAll('.project-container')
+        const projects = document.querySelectorAll('.project-planet')
         const timeline = document.querySelector('.service-timeline')
        
         projects.forEach((project)=> {
-            const image = project.firstChild
-            const tools = project.lastChild
+            const video = project.previousSibling
+            const tools = project.nextSibling
 
             project.addEventListener('mouseover', function(){
-  
 
-                image.style.display = 'flex'
-                image.style.animation = 'zoomIn 0.4s ease-in-out'
+    
+                video.style.display = 'flex'
+                video.style.animation = 'zoomIn 0.4s ease-in-out'
                 tools.style.display = 'flex'
                 tools.style.animation = 'zoomIn 0.4s ease-in-out'
 
             })
 
             project.addEventListener('mouseleave', function(){
-                image.style.display = 'none'
-                 image.style.animation = 'zoomOut 0.4s linear'
+                video.style.display = 'none'
+                video.style.transition = 'display 4s linear'
                 tools.style.display = 'none'
                 tools.style.animation = 'zoomOut 0.4s linear'
                 timeline.style.opacity = '1'
@@ -81,71 +81,81 @@ function Projects() {
            
             <a href='https://momento-todo-planner-app.vercel.app/' target='_blank'>
                <div className='project-container flex justify-center items-center max-w-full gap-10'>
-                  <div className='project-video todo-video absolute justify-center items-center left-30 top-120 w-[150px] h-[400px] -rotate-10 self-start'>               
+                  <div className='project-video todo-video hidden absolute justify-center items-center left-60 top-110  -rotate-5 self-start max-[600px]:h-30 max-[600px]:w-30  max-[600px]:top-80 '>               
                         <video className='rounded-2xl' width="150" height="140" autoplay='true'  muted='true' loop >
                           <source src="../src/assets/todoVideo.mp4" type="video/mp4" />
                           <source src="todo-video.ogg" type="video/ogg" />
                         </video>                   
                   </div>
-                  <div className='project-planet todo-project opacity-5 w-[500px] h-[500px] flex items-center justify-center rounded-full'>
+                  <div className='project-planet todo-project opacity-5 w-[500px] h-[500px] flex items-center justify-center rounded-full z-10'>
                     <div className='flex flex-col gap-2 justify-center items-center'>
                         <div className='flex flex-col items-center justify-center font-impact gap-2'>
                             <h2 className='text-xl'>2024</h2>
                             <h2 className=' mb-3 uppercase text-4xl'>ToDo planner </h2> 
                         </div>                
                         <p className='text-sm text-gray-600 text-center w-[320px] max-[600px]:text-xs max-[600px]:w-[220px]'>To do list planner app that have a daily, weekly, monthly and yearly tasks lists. the users can add, remove and toggle tasks as completed and drag and drops tasks as they like.</p>  
-                        <div className='flex gap-5 font-light text-sm text-gray-700 '>
-                          <span className='bg-green-200 p-1 px-2 rounded-4xl'>HTML</span>
-                          <span className='bg-green-200 p-1 px-2 rounded-4xl'>CSS</span>
-                          <span className='bg-green-200 p-1 px-2 rounded-4xl'>JavaScript</span> 
+                        <div className='flex gap-5 font-medium text-sm text-gray-500 max-[600px]:text-xs max-[600px]:gap-2' >
+                          <span className='bg-green-300 p-1 px-2 rounded-4xl'>HTML</span>
+                          <span className='bg-green-300 p-1 px-2 rounded-4xl'>CSS</span>
+                          <span className='bg-green-300 p-1 px-2 rounded-4xl'>JavaScript</span> 
                         </div>               
                          
                     </div>
                   </div>
-                  <div className='hidden tools todo-tools absolute font-poppins flex-col justify-center items-center  min-w-100 right-30'>
-                    <div className='flex items-center  justify-center self-start mb-20'>
+                  <div className='hidden tools todo-tools absolute font-poppins flex-col justify-center items-center  min-w-100 right-30  max-[600px]:top-190 max-[600px]:flex-row max-[600px]:right-0 '>
+                    <div className='flex items-center  justify-center self-start mb-20 max-[600px]:mb-0'>
                        <video className='rounded-xl -rotate-3' width="240" height="350" autoplay='true'  muted='true' loop >
                            <source src="../src/assets/todoVideo2.mp4" type="video/mp4" />
                            
                        </video> 
                     </div>
-                    <div className='flex items-center justify-center self-end '>
-                         <img className='w-50 h-30 rounded-xl -rotate-4' src='../src/assets/todolog-img.png'/>
+                    <div className='flex items-center justify-center self-end  '>
+                         <img className='w-50 h-30 max-[600px]:w-60 max-[600px]:h-20 max-[600px]:mr-20 rounded-xl -rotate-4' src='../src/assets/todolog-img.png'/>
                     </div>
-                    <div className='flex items-center justify-center self-start mt-20 mr-50'>
-                         <img className='w-50 h-30 rounded-xl ' src='../src/assets/todoregi-img.png'/>
+                    <div className='flex items-center justify-center self-start mt-20 mr-50 max-[600px]:mr-0 max-[600px]:mb-20'>
+                         <img className='w-50 h-30 max-[600px]:w-70 max-[600px]:h-20 rounded-xl ' src='../src/assets/todoregi-img.png'/>
                     </div>
                   </div>
               </div>
             </a>    
                         
-            {/* project 2 */}
+            {/* project 2 movieMania*/}
             <a href='https://moviemania-app-nine.vercel.app/' target='_blank'>
                 <div className='project-container flex justify-center items-center max-w-[1200px] gap-10 '>
 
-                  <div className='project-img hidden absolute left-50 w-50 h-40 rounded-xl self-start'>
-                    <img  src='../src/assets/Moviemania.png'/>
+                  <div className='project-video hidden absolute left-50 mt-30 rounded-xl rotate-2 self-start max-[600px]:h-30 max-[600px]:w-50  max-[600px]:top-190'>               
+                        <video className='rounded-2xl' width="250" height="540" autoplay='true'  muted='true' loop >
+                          <source src="../src/assets/movieMania2.mp4" type="video/mp4" />
+                        </video>                   
                   </div>
                   
-                  <div className='project-planet movie-project opacity-10 w-[500px] h-[500px] flex items-center justify-center rounded-full'>
+                  <div className='project-planet movie-project opacity-10 w-[500px] h-[500px] flex items-center justify-center rounded-full z-10'>
                     <div className='flex flex-col gap-2 justify-center items-center'>
                         <div className='flex flex-col items-center justify-center font-impact gap-2'>
                             <h2 className='text-xl'>2024</h2>
                             <h2 className=' mb-3 uppercase text-4xl'>MovieMania app</h2> 
                         </div>                
-                        <p className='text-sm text-gray-600 text-center w-[320px] max-[600px]:text-xs max-[600px]:w-[220px]'>MovieMania app is a database for Movies/Series using TMDB API to get the data. the user can search for movies using required terms and find results based on it.</p>      
+                        <p className='text-sm text-gray-600 text-center w-[320px] max-[600px]:text-xs max-[600px]:w-[220px]'>MovieMania app is a database for Movies/Series using TMDB API to get the data. the user can search for movies using required terms and find results based on it.</p>  
+                        <div className='flex gap-5 font-light text-sm text-white max-[600px]:text-xs max-[600px]:gap-2 '>
+                          <span className='bg-blue-300 p-1 px-2 rounded-4xl'>React</span>
+                          <span className='bg-blue-300 p-1 px-2 rounded-4xl'>Tailwind</span>
+                          <span className='bg-blue-300 p-1 px-2 rounded-4xl'>JavaScript</span> 
+                        </div>       
                     </div>
                   </div>
 
-                  <div className='hidden tools movie-tools absolute right-60 font-poppins flex-col justify-center items-center gap-3'>
-                    <div className='flex items-center justify-center self-start mb-10'>
-                        <span>React</span>
+                  <div className='hidden tools movie-tools absolute font-poppins flex-col justify-center items-center min-w-100 right-30 max-[600px]:top-330 max-[600px]:flex-row max-[600px]:right-0'>
+                    <div className='flex items-center  justify-center self-start mb-20 mr-40 max-[600px]:mb-0 max-[600px]:w-80 max-[600px]:mr-0'>
+                       <video className='rounded-xl -rotate-3' width="240" height="350" autoplay='true'  muted='true' loop >
+                           <source src="../src/assets/movieMania3.mp4" type="video/mp4" />
+                           
+                       </video> 
                     </div>
-                    <div className='flex items-center justify-center self-end'>
-                         <span>Tailwind</span>
+                    <div className='flex items-center justify-center self-end '>
+                         <img className='w-50 h-30 max-[600px]:w-60 max-[600px]:h-20 max-[600px]:mr-20 rounded-xl -rotate-4' src='../src/assets/movieMania-img.png'/>
                     </div>
-                    <div className='flex items-center justify-center self-start mt-10'>
-                        <span>JavaScript</span>
+                    <div className='flex items-center justify-center self-start mt-20 mr-50 max-[600px]:mr-0 max-[600px]:mb-30 max-[600px]:mt-0'>
+                         <img className='w-50 h-30 max-[600px]:w-70 max-[600px]:h-20 rounded-xl ' src='../src/assets/moviemania-img-2.png'/>
                     </div>
                   </div>
                   
@@ -157,29 +167,36 @@ function Projects() {
 
                 <div className='project-container flex justify-center items-center max-w-[1200px] gap-10'>
 
-                  <div className='project-img hidden absolute left-50 w-50 h-40 rounded-xl self-start '>
-                      <img  src='../src/assets/githubsearch.png'/>  
+                  <div className='project-video hidden absolute left-50 mt-30 rounded-2xl rotate-2 self-start max-[600px]:h-40 max-[600px]:w-50  max-[600px]:top-330'>               
+                        <video className='rounded-4xl' width="250" height="540" autoplay='true'  muted='true' loop >
+                          <source src="../src/assets/githubSearch.mp4" type="video/mp4" />
+                        </video>                   
                   </div>
                 
-                  <div className='project-planet github-project opacity-5 w-[500px] h-[500px] flex items-center justify-center rounded-full'>
+                  <div className='project-planet github-project opacity-5 w-[500px] h-[500px] flex items-center justify-center rounded-full z-10'>
                     <div className='flex flex-col gap-2 justify-center items-center'>
                         <div className='flex flex-col items-center justify-center font-impact gap-2'>
                             <h2 className='text-xl'>2024</h2>
                             <h2 className=' mb-3 uppercase text-4xl'>GitHub search app</h2> 
                         </div>                
-                        <p className='text-sm text-gray-600 text-center w-[320px] max-[600px]:text-xs max-[600px]:w-[220px]'>GitHub search app is an app that allow user to search for GitHub users by name, location or number of repos.</p>      
+                        <p className='text-sm text-gray-800 text-center w-[320px] max-[600px]:text-xs max-[600px]:w-[220px]'>GitHub search app is an app that allow user to search for GitHub users by name, location or number of repos.</p>      
+                        <div className='flex gap-5 font-light text-sm text-white max-[600px]:text-xs max-[600px]:gap-2 '>
+                          <span className='bg-stone-600 p-1 px-2 rounded-4xl'>React</span>
+                          <span className='bg-stone-600 p-1 px-2 rounded-4xl'>Tailwind</span>
+                          <span className='bg-stone-600 p-1 px-2 rounded-4xl'>JavaScript</span> 
+                        </div>  
                     </div>
                   </div>
 
-                  <div className='hidden tools github-tools absolute right-60 font-poppins flex-col justify-center items-center gap-3'>
-                    <div className='flex items-center justify-center self-start mb-10'>
-                        <span>React</span>
+                  <div className='hidden tools github-tools absolute font-poppins flex-col justify-center items-center  min-w-100 right-30 max-[600px]:top-470 max-[600px]:flex-row max-[600px]:right-0'>
+                    <div className='flex items-center  justify-center self-start mb-20'>
+                         <img className='w-50 h-30 rounded-xl -rotate-4' src='../src/assets/githubSearch2.png'/>
                     </div>
-                    <div className='flex items-center justify-center self-end'>
-                         <span>Tailwind</span>
+                    <div className='flex items-center justify-center self-end '>
+                         <img className='w-50 h-30 max-[600px]:w-60 max-[600px]:h-20 max-[600px]:mr-20 rounded-xl -rotate-4' src='../src/assets/githubsearch.png'/>
                     </div>
-                    <div className='flex items-center justify-center self-start mt-10'>
-                        <span>JavaScript</span>
+                    <div className='flex items-center justify-center self-start mt-10 -rotate-3 max-[600px]:mr-0'>
+                         <img className='w-40 h-80 max-[600px]:w-40 max-[600px]:h-30 rounded-xl ' src='../src/assets/githubSearch.jpg'/>
                     </div>
                   </div>
                 </div>              
@@ -189,7 +206,7 @@ function Projects() {
             
          </div>
           <div className="slogan flex flex-col items-center justify-center text-center mt-30  relative">
-           <h2 className="market-title-project z-10">A front-end developer passionate about building seamless and interactive experiences!
+           <h2 className="market-title-project  z-10">A front-end developer passionate about building seamless and interactive experiences!
             <a href="mailto:mohamedbahgat950@gmail.com" target="_blank">
                <span className="inline-block text-xl align-middle ml-3 w-50 rounded-full bg-red-400 text-white py-3 max-[600px]:mt-5">Let's connect
                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" className="size-7 inline-block ml-3 bg-white rounded-full p-1 ">

@@ -1,13 +1,15 @@
 import { NavLink, Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 
 function NavBar() {
+
 
   const smallMenuRef = useRef()
   const menuNameRef = useRef()
   const closeMenuRef = useRef()
   const menuIconRef = useRef()
+
   
   
   const HandleMenuClick  = ()=> {
@@ -31,7 +33,11 @@ function NavBar() {
         <div className="navbar fixed top-0 w-full z-40">
             <nav className='flex justify-between items-center flex-wrap px-5 py-6.5 text-[#6e65f6] uppercase '>
                 <div className="flex gap-10 items-center">
-                  <img className="w-15 mix-blend-multiply " src="../src/assets/mylogo.svg"/>
+                  <div className="rounded-full flex justify-center items-center">
+                     <h2 className="name-logo text-[#424cd8] font-poppins font-bold text-4xl tracking-[-4px]" >MB</h2> 
+                  </div>
+                 
+                  {/* className="w-15 mix-blend-multiply " src="../src/assets/mylogo.svg"/> */}
                   <span className="tracking-wide underline">mohamedbahgat950@gmail.com</span>
                 </div>
                 

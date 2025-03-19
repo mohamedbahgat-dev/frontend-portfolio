@@ -593,7 +593,7 @@ button:visited {
   width: 100%;
   height: 50%;
 }
-/* 
+
 #stars {
   width: 2px;
   height: 2px;
@@ -931,7 +931,7 @@ button:visited {
     1486px 700px #c49952, 170px 1989px #c49952, 1275px 799px #c49952,
     772px 2000px #c49952, 1642px 362px #c49952, 216px 940px #c49952,
     1893px 281px #c49952, 1944px 1298px #c49952, 1294px 400px #c49952;
-} */
+}
 
 /* styling projects section */
 
@@ -970,60 +970,6 @@ button:visited {
   animation-timeline: scroll();
   animation-range: 190vh 280vh;
 }
-
-/* .todo-tools div {
-  font-size: 13px;
-  color: #3a287b;
-  font-weight: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: radial-gradient(
-      circle at 40% 30%,
-      #2d2b2b00 4%,
-      57%,
-      #2f2e2ea3 90%
-    )
-    #fbdc5f;
-}
-
-.movie-tools div {
-  font-size: 13px;
-  color: #3a287b;
-  font-weight: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: radial-gradient(
-      circle at 40% 30%,
-      #2d2b2b00 4%,
-      57%,
-      #2f2e2ea3 90%
-    )
-    #80cf64;
-}
-
-.github-tools div {
-  font-size: 13px;
-  color: #3a287b;
-  font-weight: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: radial-gradient(
-      circle at 40% 30%,
-      #2d2b2b00 4%,
-      57%,
-      #2f2e2ea3 90%
-    )
-    #619dde;
-} */
 
 /* styling contacts section */
 
@@ -1712,6 +1658,30 @@ button:visited {
     filter: blur(0);
     transform: translateX(60px);
   }
+
+  .project-video {
+    left: 10px;
+  }
+
+  .tools {
+    right: 0px;
+    gap: 70px;
+    z-index: 0;
+  }
+
+  .github-tools div:first-child {
+    margin-bottom: -60px;
+    rotate: 7deg;
+  }
+
+  .github-tools div:nth-child(2) {
+    rotate: 7deg;
+  }
+
+  .github-tools div:last-child {
+    margin-left: 150px;
+    rotate: 4deg;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1993,6 +1963,32 @@ button:visited {
     width: 450px;
     height: 450px;
     margin-top: 45px;
+  }
+
+  .project-video {
+    left: 150px;
+  }
+
+  .tools {
+    right: 150px;
+    gap: 10px;
+    z-index: 0;
+  }
+
+  .github-tools div:first-child {
+    margin-bottom: 50px;
+    margin-right: 120px;
+    rotate: 7deg;
+  }
+
+  .github-tools div:nth-child(2) {
+    rotate: 7deg;
+  }
+
+  .github-tools div:last-child {
+    margin-left: 20px;
+    margin-top: 50px;
+    rotate: 4deg;
   }
 }
 

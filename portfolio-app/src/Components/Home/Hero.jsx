@@ -1,20 +1,31 @@
 import React from 'react'
-import NavBar from './NavBar';
+import { useEffect } from 'react';
+
 
 function Hero() {
+
+
+
+
   return (
     <div className='hero max-h-[150vh] mt-[100px] '>
            <div className = 'flex flex-col justify-center items-center mx-20 min-h-[70vh]'>
               <div className = 'flex flex-col justify-center items-center mt-5'>
-
+                
+                {/* my name  */}
                 <div className='flex justify-center gap-3'>
                     <h2  className = 'name uppercase font-semibold text-[#766cf9] max-[600px]:top-30 min-[600px]:top-35 min-[600px]:text-[20px] min-[768px]:top-35 min-[768px]:text-[25px]'>Mohamed Bahgat</h2>
-                </div>      
+                </div>   
                 
+                {/* custome cursor effect */}
+                {/* <div className='cursor-name h-5 w-5 bg-red-600 rounded-full'></div>    */}
+                
+                {/* front-end banner */}
                 <div className='frontend-container mt-10'>
                   <h3  className = 'frontend uppercase text-[6.8vw] text-center text-gray-500' >frontend Developer</h3>
                 </div>
             
+                {/* rotating logos */}
                 <div className='elipse-container'>
                   <div className = 'elipse flex gap-10'>
                     <div className='shape shape-1 flex justify-center items-center'>
