@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useRef } from 'react'
 import { useScroll } from 'framer-motion'
-import Footer from './Home/Footer'
+import Footer from './Footer'
 
 function Skills() {
 

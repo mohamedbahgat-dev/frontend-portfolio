@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from './Home/Footer'
+import Footer from './Footer'
 
 function Contacts() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react';
-import Footer from './Home/Footer';
+import Footer from './Footer';
 
 function Services() {
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
-import Footer from './Home/Footer'
+import Footer from './Footer'
 
 function Projects() {
 
@@ -147,15 +147,15 @@ function Projects() {
                   <div className='hidden tools movie-tools absolute font-poppins flex-col justify-center items-center min-w-100 right-30 max-[600px]:top-330 max-[600px]:flex-row max-[600px]:right-0'>
                     <div className='flex items-center  justify-center self-start mb-20 mr-40 max-[600px]:mb-0 max-[600px]:w-80 max-[600px]:mr-0'>
                        <video className='rounded-xl -rotate-3' width="240" height="350" autoplay='true'  muted='true' loop >
-                           <source src="/assets/movieMania3.mp4" type="video/mp4" />
+                           <source src="/assets/MovieMania3.mp4" type="video/mp4" />
                            
                        </video> 
                     </div>
                     <div className='flex items-center justify-center self-end '>
-                         <img className='w-50 h-30 max-[600px]:w-60 max-[600px]:h-20 max-[600px]:mr-20 rounded-xl -rotate-4' src='/assets/movieMania-img.png'/>
+                         <img className='w-50 h-30 max-[600px]:w-60 max-[600px]:h-20 max-[600px]:mr-20 rounded-xl -rotate-4' src='/assets/MovieMania-img.png'/>
                     </div>
                     <div className='flex items-center justify-center self-start mt-20 mr-50 max-[600px]:mr-0 max-[600px]:mb-30 max-[600px]:mt-0'>
-                         <img className='w-50 h-30 max-[600px]:w-70 max-[600px]:h-20 rounded-xl' src='/assets/moviemania-img-2.png'/>
+                         <img className='w-50 h-30 max-[600px]:w-70 max-[600px]:h-20 rounded-xl' src='/assets/MovieMania-img-2.png'/>
                     </div>
                   </div>
                   
