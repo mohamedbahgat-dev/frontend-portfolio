@@ -1250,18 +1250,18 @@ button:visited {
 
   .card-container:nth-child(even) .card {
     position: relative;
-    right: 40px;
+    right: 65px;
   }
 
   .card-container:nth-child(odd) .card {
     position: relative;
-    right: 220px;
+    right: 180px;
   }
 
   .card {
     font-size: 12px;
     border-radius: 20px;
-    width: 200px;
+    width: 180px;
   }
 
   .hide {
@@ -1303,7 +1303,7 @@ button:visited {
 
   #code {
     offset-path: path(
-      "M64 -155 L30 25 L-118 25 L-118 296, L-118 525 L230 525 L230 775, L230 1010 L-118 1000 L-118 1270, L-118 1500 L230 1500 L230 1750, L230 1980 L-118 1980 L-118 2250, L-118 2460 L230 2460 L230 2936"
+      "M56 -170 L30 25 L-118 25 L-118 296, L-118 525 L230 525 L230 775, L230 1010 L-118 1000 L-118 1270, L-118 1500 L230 1500 L230 1750, L230 1980 L-118 1980 L-118 2250, L-118 2460 L230 2460 L230 2936"
     );
 
     animation-range: 300px 90%;

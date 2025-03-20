@@ -38,7 +38,7 @@ function Services() {
             </div>
           </div>
           <div className='service-header absolute top-130 w-full flex justify-center  items-center'>
-                <h2 className='text-5xl text-[#6e65f6]'>See what I can do</h2>
+                <h2 className='text-5xl text-[#6e65f6] max-[600px]:text-3xl'>See what I can do</h2>
           </div>
          
           <div id='services' className=' flex justify-center mt-[400px]'>
