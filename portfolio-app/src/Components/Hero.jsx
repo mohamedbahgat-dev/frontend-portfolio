@@ -18,7 +18,7 @@ function Hero() {
                 </div>      
                 
                 {/* front-end banner */}
-                <div className='frontend-container mt-10'>
+                <div className='frontend-container text-center flex justify-center mt-10'>
                   <h3  className = 'frontend uppercase text-[6.8vw] text-center text-gray-500' >frontend Developer</h3>
                 </div>
             

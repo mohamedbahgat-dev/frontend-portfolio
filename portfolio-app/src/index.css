@@ -1008,6 +1008,10 @@ button:visited {
     display: block;
   }
 
+  .navbar {
+    width: 90%;
+  }
+
   .tracking-wide {
     display: none;
   }
@@ -1017,21 +1021,23 @@ button:visited {
   }
 
   .frontend-container {
+    text-align: center;
     height: 140px;
+
+    max-width: 70%;
   }
 
   .frontend {
-    margin-inline: 100px;
-    font-size: 45px;
+    font-size: 40px;
     text-shadow: 3px 3px 0px #c697fa, 5px 5px 0px #c194f5;
   }
 
   .elipse {
-    bottom: 54%;
-    left: 4%;
+    bottom: 57%;
+    left: 5%;
     width: 88%;
     rotate: 170deg;
-    /* transform: rotate(-30deg); */
+
     border-bottom-width: -10px;
   }
 
@@ -1126,8 +1132,8 @@ button:visited {
   .skills-elipse {
     top: 24%;
     left: 26%;
-    width: 48%;
-    height: 32%;
+    width: 50%;
+    height: 29%;
   }
 
   .skills-container {

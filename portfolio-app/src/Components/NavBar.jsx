@@ -13,7 +13,7 @@ function NavBar() {
   
   
   const HandleMenuClick  = ()=> {
-    smallMenuRef.current.className = 'max-[600px]:flex min-[600px]:flex max-[768px]:flex flex-col gap-5 w-[500px] h-[80vh] pl-5 pt-5 absolute top-20 left-0 '
+    smallMenuRef.current.className = 'max-[600px]:flex min-[600px]:flex  max-[768px]:flex flex-col gap-5 w-[500px] h-[80vh] pl-5 pt-5 absolute top-20 left-0 '
     closeMenuRef.current.className = 'block hover:cursor-pointer'
     menuNameRef.current.className = 'hidden'
     menuIconRef.current.style.fill = '#ff8000'
@@ -31,7 +31,7 @@ function NavBar() {
   return (
     <div >
         <div className="navbar fixed top-0 w-full z-40">
-            <nav className='flex justify-between items-center flex-wrap px-5 py-6.5 text-[#6e65f6] uppercase '>
+            <nav className='flex justify-between items-center flex-wrap px-8 py-6.5 text-[#6e65f6] uppercase '>
                 <div className="flex gap-10 items-center">
                   <div className="rounded-full flex justify-center items-center">
                      <h2 className="name-logo text-[#424cd8] font-poppins font-bold text-4xl tracking-[-4px]" >MB</h2> 
@@ -41,7 +41,7 @@ function NavBar() {
                   <span className="tracking-wide underline">mohamedbahgat950@gmail.com</span>
                 </div>
                 
-                <div className="max-[600px]:flex min-[600px]:flex justify-self-end gap-2 max-[992px]:hidden">
+                <div className="max-[600px]:flex justify-self-end gap-2 max-[992px]:hidden">
                    <div>
                       <h2 className="menu-name max-[992px]:hidden transition-all duration-100" ref={menuNameRef}>Menu</h2>
                       <h2 className="hidden absolute top-10 menu-close " ref={closeMenuRef} onClick={handleMenuClose}>Close</h2>
@@ -57,7 +57,7 @@ function NavBar() {
 
 
                   {/* samll screens menu */}
-                <div className="small-sc-menu hidden flex-col gap-5 w-[500px] h-[80vh] pl-5 pt-5 absolute top-20 left-0 pt" ref={smallMenuRef}>
+                <div className="small-sc-menu hidden flex-col gap-5 w-[500px] h-[80vh] pl-5 pt-5 absolute top-20 left-0" ref={smallMenuRef}>
                   <h2>
                        <NavLink to={'/'}
                                 className={({isActive})=>`mx-2 hover:text-sky-400 cursor-pointer ${isActive ? 'text-red-500': 'text-[#6e65f6]'}`}>
@@ -96,7 +96,7 @@ function NavBar() {
                 </div>
 
                   {/* main menu */}
-                <div className='main-menu flex flex-wrap items-center justify-center gap-x-5'>
+                <div className='main-menu flex flex-wrap items-center justify-center gap-x-5 '>
                     <h2>
                        <NavLink to={'/'}
                                 className={({isActive})=>`mx-2 hover:text-sky-400 cursor-pointer ${isActive ? 'text-red-500': 'text-[#6e65f6]'}`}>
