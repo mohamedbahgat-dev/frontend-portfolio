@@ -53,7 +53,7 @@ function Hero() {
                  {/* hero icons  */}
               <div className='hero-icons absolute top-[750px] max-w-[70%] flex justify-center items-center flex-wrap gap-20 max-[600px]:top-[450px] max-[600px]:w-40 max-[600px]:gap-20 min-[600px]:top-[630px] min-[768px]:top-[690px] min-[600px]:gap-30 min-[992px]:gap-25 min-[992px]:top-[780px]'>
                   
-                <div className="h-45 max-[600px]:h-30 w-60 flex flex-col justify-between gap-5 items-center">
+                <div className=" h-45 max-[600px]:h-30 w-60 flex flex-col justify-between gap-5 items-center">
                    <img src="/assets/responsive.png" alt="" className="responsive-icon block max-w-30 max-[600px]:w-20" />
                    <h3 className='font-poppins text-2xl font-semibold text-blue-700'>Responsive Apps</h3>
                   <p className='text-center w-70 text-sm'>Creating visually appealing and mobile-friendly websites that work seamlessly across all devices</p>
@@ -68,7 +68,7 @@ function Hero() {
                  <div className="h-45 max-[600px]:h-30 flex flex-col justify-between gap-5 items-center">
                    <img src="/assets/performance.png" alt="" className="performance-icon block max-w-30 max-[600px]:w-20" />
                    <h3 className='font-poppins text-2xl font-semibold text-blue-700'>High performance</h3>
-                    <p className='text-center w-70 text-sm'>Improving website performance, speed, and accessibility for a better user experience.</p>
+                   <p className='text-center w-70 text-sm'>Improving website performance, speed, and accessibility for a better user experience.</p>
                 </div>
                  
               </div>

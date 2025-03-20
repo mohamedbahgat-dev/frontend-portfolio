@@ -13,7 +13,7 @@ function NavBar() {
   
   
   const HandleMenuClick  = ()=> {
-    smallMenuRef.current.className = 'max-[600px]:flex min-[600px]:flex  min-[768px]:flex flex-col gap-5 w-[500px] h-[80vh] pl-5 pt-5 absolute top-20 left-0 '
+    smallMenuRef.current.className = 'max-[600px]:flex min-[600px]:flex min-[600px]:bg-red-500 max-[768px]:flex flex-col gap-5 w-[500px] h-[80vh] pl-5 pt-5 absolute top-20 left-0 '
     closeMenuRef.current.className = 'block hover:cursor-pointer'
     menuNameRef.current.className = 'hidden'
     menuIconRef.current.style.fill = '#ff8000'
@@ -31,19 +31,19 @@ function NavBar() {
   return (
     <div >
         <div className="navbar fixed top-0 w-full z-40">
-            <nav className='flex justify-between items-center flex-wrap px-12 py-6.5 text-[#6e65f6] uppercase '>
+            <nav className='flex justify-between items-center flex-wrap px-5 pr-15 py-6.5 text-[#6e65f6] uppercase '>
                 <div className="flex gap-10 items-center">
-                  <div className="rounded-full flex justify-center items-center">
-                     <h2 className="name-logo text-[#424cd8] font-poppins font-bold text-4xl tracking-[-4px]" >MB</h2> 
-                  </div>
-                 
-                  {/* className="w-15 mix-blend-multiply " src="../src/assets/mylogo.svg"/> */}
-                  <span className="tracking-wide underline">mohamedbahgat950@gmail.com</span>
+                   <div className="rounded-full flex justify-center items-center">
+                    <NavLink to={'/'}>
+                       <h2 className="name-logo text-[#424cd8] font-poppins font-bold text-4xl tracking-[-4px]" >MB</h2> 
+                    </NavLink>    
+                   </div>
+                  <span className="tracking-wide underline">mohamedbahgat950@gmail.com</span> 
                 </div>
                 
-                <div className="max-[600px]:flex min-[600px]:flex min-[768]:flex justify-self-end gap-2 max-[992px]:hidden">
+                <div className="max-[600px]:flex min-[600px]:flex justify-self-end gap-2 max-[992px]:hidden">
                    <div>
-                      <h2 className="menu-name min-[992px]:hidden transition-all duration-100" ref={menuNameRef}>Menu</h2>
+                      <h2 className="menu-name max-[992px]:hidden transition-all duration-100" ref={menuNameRef}>Menu</h2>
                       <h2 className="hidden absolute top-10 menu-close " ref={closeMenuRef} onClick={handleMenuClose}>Close</h2>
                    </div>
                  

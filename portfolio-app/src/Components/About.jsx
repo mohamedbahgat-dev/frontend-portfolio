@@ -12,7 +12,7 @@ function About() {
         <div className='mt-20'>
           
            {/* mian display cards container */}
-            <div className='about-cards flex flex-col justify-center items-center gap-y-20 text-gray-400'>
+            <div className='about-cards flex flex-col justify-center items-center gap-y-20 text-gray-400 '>
 
                <div className=' flex flex-col items-center justify-center bg-[#f9f9e3] rounded-4xl shadow-lg shadow-[#c1bebe]'>
                 <img className='w-90 h-60 mb-5 border-2 border-[#efefad] rounded-3xl' src='/assets/passion.svg' />
