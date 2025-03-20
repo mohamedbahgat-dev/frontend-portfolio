@@ -1842,6 +1842,7 @@ button:visited {
   }
 
   .skills .skill {
+    opacity: 0;
     z-index: 10;
     width: 180px;
     height: 180px;
