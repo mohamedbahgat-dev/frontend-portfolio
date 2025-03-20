@@ -1129,15 +1129,15 @@ button:visited {
 
   .skills-header {
     font-size: 42px;
-    margin-left: 17px;
-    margin-top: 15px;
+    margin-left: 2.5%;
+    margin-top: 43px;
   }
 
   .skills-elipse {
     top: 24%;
-    left: 26%;
-    width: 50%;
-    height: 29%;
+    left: 22%;
+    width: 54%;
+    height: 25%;
   }
 
   .skills-container {

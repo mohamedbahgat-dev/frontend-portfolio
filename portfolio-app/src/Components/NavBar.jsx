@@ -31,7 +31,7 @@ function NavBar() {
   return (
     <div >
         <div className="navbar fixed top-0 w-full z-40">
-            <nav className='flex justify-between items-center flex-wrap px-5 pr-15 py-6.5 text-[#6e65f6] uppercase '>
+            <nav className='flex justify-between items-center flex-wrap px-10 py-6.5 text-[#6e65f6] uppercase '>
                 <div className="flex gap-10 items-center">
                    <div className="rounded-full flex justify-center items-center">
                     <NavLink to={'/'}>
