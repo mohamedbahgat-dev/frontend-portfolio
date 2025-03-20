@@ -1130,7 +1130,7 @@ button:visited {
   .skills-header {
     font-size: 42px;
     margin-left: 2.5%;
-    margin-top: 43px;
+    margin-top: 24px;
   }
 
   .skills-elipse {
@@ -1220,7 +1220,7 @@ button:visited {
   .skill-details {
     border-radius: 50%;
     width: 250px;
-    top: 772px;
+    top: 782px;
     font-size: 10px;
   }
 

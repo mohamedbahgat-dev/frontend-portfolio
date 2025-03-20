@@ -210,7 +210,7 @@ function Services() {
          <div className=" slogan flex flex-col items-center justify-center text-center mt-20 relative">
            <h2 className="market-title z-10">You want an elegant, modern and responsive website?
             <a href="mailto:mohamedbahgat950@gmail.com" target="_blank">
-               <span className="inline-block text-xl align-middle ml-3 w-50 rounded-full bg-red-400 text-white py-3">Let's connect
+               <span className="inline-block text-xl align-middle w-50 rounded-full bg-red-400 text-white py-3">Let's connect
                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" className="size-7 inline-block ml-3 bg-white rounded-full p-1 ">
                    <path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
                  </svg>
