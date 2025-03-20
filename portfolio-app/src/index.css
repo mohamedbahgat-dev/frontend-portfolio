@@ -1128,9 +1128,10 @@ button:visited {
   }
 
   .skills-header {
-    font-size: 42px;
+    font-size: 32px;
+    padding-inline: 10px;
     margin-left: 2.5%;
-    margin-top: 24px;
+    margin-top: 14px;
   }
 
   .skills-elipse {
@@ -1220,14 +1221,15 @@ button:visited {
   .skill-details {
     border-radius: 50%;
     width: 250px;
-    top: 782px;
-    font-size: 10px;
+    top: 770px;
+    font-size: 8px;
+    left: 95px;
   }
 
   .details {
-    padding-inline: 40px;
-    width: 250px;
-    height: 250px;
+    padding-inline: 25px;
+    width: 220px;
+    height: 220px;
   }
 
   .slogan div {
