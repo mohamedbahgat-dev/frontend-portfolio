@@ -53,7 +53,7 @@ function About() {
 
         </div>
         
-        <div className="slogan flex flex-col items-center justify-center text-center mt-60 relative">
+        <div className="slogan flex flex-col items-center justify-center text-center mt-60 relative ">
            <h2 className="market-title">You want a custom website that fit your business?
             <a href="mailto:mohamedbahgat950@gmail.com" target="_blank">
                <span className="inline-block text-xl align-middle ml-3 w-50 rounded-full bg-red-400 text-white py-3 ">Let's connect
@@ -63,7 +63,7 @@ function About() {
                </span>
             </a>           
            </h2> 
-           <div className="w-50 max-[600px]:w-20 h-50 absolute top-[25%]  max-[600px]:left-[15%]  bg-yellow-300 -z-1 blur-[100px]" ></div>       
+           <div  className="w-50 max-[600px]:w-20 h-50 absolute top-[25%]  max-[600px]:left-[15%]  bg-yellow-300 -z-1 blur-[100px]" ></div>       
          
         </div> 
         
