@@ -1,5 +1,5 @@
-import { NavLink, Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
+import { useRef } from "react";
 
 
 function NavBar() {
