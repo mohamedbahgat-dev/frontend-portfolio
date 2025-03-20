@@ -31,7 +31,7 @@ function NavBar() {
   return (
     <div >
         <div className="navbar fixed top-0 w-full z-40">
-            <nav className='flex justify-between items-center flex-wrap px-8 py-6.5 text-[#6e65f6] uppercase '>
+            <nav className='flex justify-between items-center flex-wrap py-6.5 text-[#6e65f6] max-[600px]:mx-15 uppercase '>
                 <div className="flex gap-10 items-center">
                   <div className="rounded-full flex justify-center items-center">
                      <h2 className="name-logo text-[#424cd8] font-poppins font-bold text-4xl tracking-[-4px]" >MB</h2> 
