@@ -50,9 +50,7 @@ function NavBar() {
                    <div>
                       <h2 className="menu-name max-[992px]:hidden transition-all duration-100" ref={menuNameRef}>Menu</h2>
                       <h2 className="hidden absolute top-10 menu-close " ref={closeMenuRef} onClick={handleMenuClose}>Close</h2>
-                   </div>
-                 
-                   
+                   </div>   
                 </div>
                
 

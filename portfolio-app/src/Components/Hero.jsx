@@ -19,7 +19,7 @@ function Hero() {
                 
                 {/* front-end banner */}
                 <div className='frontend-container text-center flex justify-center mt-10'>
-                  <h3  className = 'frontend uppercase text-[6.8vw] text-center text-gray-500' >frontend Developer</h3>
+                  <h3  className = 'frontend uppercase text-[6.8vw] text-center text-gray-500 ' >frontend Developer</h3>
                 </div>
             
                 {/* rotating logos */}

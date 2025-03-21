@@ -23,7 +23,7 @@ function Services() {
 
 
   return (
-    <div>
+    <div className='flex flex-col items-center'>
           <div className='night-stars absolute top-0 w-full h-[1100px] flex justify-center -z-1'>
             <span className='planet absolute top-40 z-20 '></span>
             <span className='planet-2 absolute top-40 z-10'></span>
@@ -56,7 +56,7 @@ function Services() {
                 {/* from here add cards */}
                 
                 {/* card 1 */}
-                   <div className='card-container' id='firstPath'>
+                <div className='card-container' id='firstPath'>
                     <div className='card text-center font-poppins text-lg'>
                         <h2>Custom Website Development</h2> 
                     </div>
@@ -122,8 +122,7 @@ function Services() {
                             </div>
                             <div className='icon hide w-24 h-24 grid place-items-center rounded-sm '>
                                 <img className='w-10 rounded-lg' src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' />
-                            </div>
-                               
+                            </div>           
                         </div>
                     </div>
                </div>  
@@ -204,9 +203,10 @@ function Services() {
                      </div>
                   </div>  
                </div>
-             </div>
-           {/* timeline --ends-- */}
+             </div>   
         </div>
+
+        {/* timeline --ends-- */}
          <div className=" slogan flex flex-col items-center justify-center text-center mt-20 relative">
            <h2 className="market-title z-10">You want an elegant, modern and responsive website?
             <a href="mailto:mohamedbahgat950@gmail.com" target="_blank">

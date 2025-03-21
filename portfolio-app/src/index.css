@@ -586,7 +586,7 @@ button:visited {
   background-color: rgb(12, 30, 68);
 }
 
-.animated-stars {
+/* .animated-stars {
   position: fixed;
   top: 0;
   left: 0;
@@ -931,7 +931,7 @@ button:visited {
     1486px 700px #c49952, 170px 1989px #c49952, 1275px 799px #c49952,
     772px 2000px #c49952, 1642px 362px #c49952, 216px 940px #c49952,
     1893px 281px #c49952, 1944px 1298px #c49952, 1294px 400px #c49952;
-}
+} */
 
 /* styling projects section */
 
@@ -1021,15 +1021,15 @@ button:visited {
   }
 
   .frontend-container {
+    width: 400px;
+
     text-align: center;
     height: 140px;
-
-    max-width: 70%;
   }
 
   .frontend {
     font-size: 40px;
-    text-shadow: 3px 3px 0px #c697fa, 5px 5px 0px #c194f5;
+    text-shadow: 2px 2px 0px #c697fa, 4px 4px 4px #c194f5;
   }
 
   .elipse {
@@ -1237,9 +1237,12 @@ button:visited {
     left: 30%;
   }
 
+  #services {
+    width: 100%;
+  }
+
   .card-container:nth-child(odd) {
     padding: 100px 0 300px 120px;
-
     width: 200px;
   }
 
@@ -1259,6 +1262,7 @@ button:visited {
   }
 
   .card {
+    background-color: green;
     font-size: 12px;
     border-radius: 20px;
     width: 180px;
@@ -1278,13 +1282,13 @@ button:visited {
   .show {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(-80px);
+    transform: translateX(-100px);
   }
 
   .card-container:nth-child(even) .show {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(80px);
+    transform: translateX(100px);
   }
 
   .icon {
