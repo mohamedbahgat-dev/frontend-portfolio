@@ -140,7 +140,7 @@ function Skills() {
 
 
       {/* sun shape */}
-      <div className='w-full max-[600px]:h-[80vh] min-[600px]:h-[80vh] min-[768px]:h-[80vh] min-[992px]:h-[100vh]  flex justify-center items-center '>
+      <div className='w-full max-[600px]:h-[60vh] min-[600px]:h-[80vh] min-[768px]:h-[80vh] min-[992px]:h-[100vh]  flex justify-center items-center '>
         <div className='skills-elipse flex justify-center items-center'>
           <h2 className='skills-header text-[#6e65f6] uppercase text-center z-30'> <span className='text-2xl inline-block'>See my</span> skills</h2>
         </div> 
