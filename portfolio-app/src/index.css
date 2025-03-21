@@ -202,11 +202,8 @@ button:visited {
 /* styling skills component */
 
 .skills-elipse {
-  position: absolute;
-  top: 18%;
-  left: 37.3%;
-  width: 24%;
-  height: 45%;
+  width: 30vw;
+  height: 30vw;
   border-radius: 50%;
   border-color: rgba(120, 82, 255, 0.5);
   border-bottom: 0.5px solid transparent;
@@ -249,7 +246,7 @@ button:visited {
 
 .wave {
   position: absolute;
-  top: 550px;
+  top: 650px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -269,7 +266,7 @@ button:visited {
 
 .wave-2 {
   position: absolute;
-  top: 500px;
+  top: 600px;
   left: 0;
   width: 100%;
   z-index: -1;
@@ -529,6 +526,7 @@ button:visited {
 }
 
 #services {
+  width: 100%;
   border-top-right-radius: 1000px;
   border-top-left-radius: 1000px;
   border-bottom-left-radius: 50px;
@@ -586,7 +584,7 @@ button:visited {
   background-color: rgb(12, 30, 68);
 }
 
-/* .animated-stars {
+.animated-stars {
   position: fixed;
   top: 0;
   left: 0;
@@ -931,7 +929,7 @@ button:visited {
     1486px 700px #c49952, 170px 1989px #c49952, 1275px 799px #c49952,
     772px 2000px #c49952, 1642px 362px #c49952, 216px 940px #c49952,
     1893px 281px #c49952, 1944px 1298px #c49952, 1294px 400px #c49952;
-} */
+}
 
 /* styling projects section */
 
@@ -1127,33 +1125,28 @@ button:visited {
     background-color: transparent;
   }
 
-  .skills-header {
-    font-size: 32px;
-    padding-inline: 10px;
-    margin-left: 2.5%;
-    margin-top: 14px;
-  }
-
-  .skills-elipse {
-    top: 24%;
-    left: 22%;
-    width: 54%;
-    height: 25%;
-  }
-
   .skills-container {
-    margin-top: 300px;
-    height: 550px;
+    height: 520px;
     margin-bottom: 0px;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
     background-image: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.5) 1%,
+      rgba(255, 254, 254, 0.058) 1%,
       rgba(249, 221, 203, 0.584) 40%,
       #f9f4d93c
     );
     animation: none;
+  }
+
+  .skills-elipse {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .skills-header {
+    font-size: 20px;
+    width: 100px;
   }
 
   .wave {
@@ -1221,9 +1214,9 @@ button:visited {
   .skill-details {
     border-radius: 50%;
     width: 250px;
-    top: 770px;
+    top: calc(100% - 3vh);
+    margin-left: 30px;
     font-size: 8px;
-    left: 95px;
   }
 
   .details {
@@ -1401,21 +1394,7 @@ button:visited {
     animation: none;
   }
 
-  .skills-header {
-    font-size: 42px;
-    margin-left: 17px;
-    margin-top: 43px;
-  }
-
-  .skills-elipse {
-    top: 24%;
-    left: 26%;
-    width: 48%;
-    height: 42%;
-  }
-
   .skills-container {
-    margin-top: 430px;
     height: 500px;
     margin-bottom: 0px;
     border-bottom-left-radius: 0%;
@@ -1427,6 +1406,16 @@ button:visited {
       #e9f5ff3c
     );
     animation: none;
+  }
+
+  .skills-elipse {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .skills-header {
+    font-size: 45px;
+    width: 120px;
   }
 
   .wave {
@@ -1494,7 +1483,8 @@ button:visited {
   .skill-details {
     border-radius: 50%;
     width: 250px;
-    top: 940px;
+    top: 96%;
+
     font-size: 10px;
   }
 
@@ -1600,19 +1590,14 @@ button:visited {
     animation: none;
   }
 
-  .skills-header {
-    margin-top: 68px;
+  .skills-container {
+    height: 660px;
+    margin-bottom: 20px;
   }
 
   .skills-elipse {
-    width: 48%;
-    height: 48%;
-  }
-
-  .skills-container {
-    margin-top: 500px;
-    height: 550px;
-    margin-bottom: 20px;
+    width: 45vw;
+    height: 45vw;
   }
 
   .tech {
@@ -1620,7 +1605,7 @@ button:visited {
   }
 
   .skills {
-    height: 620px;
+    height: 660px;
   }
 
   .skills .skill {
@@ -1630,9 +1615,9 @@ button:visited {
 
   .skill-details {
     width: 300px;
-    top: 927px;
+    top: 97%;
     font-size: 12px;
-    left: 243px;
+    margin-left: 20px;
   }
 
   .details {
@@ -1780,37 +1765,21 @@ button:visited {
     left: 43%;
   }
 
-  .skills-elipse {
-    position: absolute;
-    top: 18%;
-    left: 37.3%;
-    width: 24%;
-    height: 45%;
-    border-radius: 50%;
-    border-color: rgba(120, 82, 255, 0.5);
-    border-bottom: 0.5px solid transparent;
-    box-shadow: 5px 5px 30px 10px rgb(120, 82, 255),
-      inset 5px 5px 5px 10px rgb(111, 116, 119),
-      inset 10px 10px 20px 20px rgb(201, 224, 238),
-      inset 20px 20px 30px 30px rgb(218, 240, 254);
-    animation: beats 5s ease-in-out infinite;
-  }
-
   .skills-header {
-    font-size: 52px;
-    margin-left: -10px;
-    margin-top: 5px;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 4vw;
+    width: 200px;
   }
 
   .skills-container {
     z-index: -1;
     height: 120vh;
-    margin-top: 400px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     background-image: linear-gradient(
       to bottom,
-      rgba(156, 206, 246, 0.5) 10%,
+      rgb(205, 230, 250) 10%,
       rgba(49, 118, 167, 0.3) 30%,
       #3b9bc4
     );
@@ -1819,11 +1788,24 @@ button:visited {
     animation-range: 90vh 100%;
   }
 
+  .skills-elipse {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .skills-header {
+    font-size: 45px;
+    width: 120px;
+  }
+
+  .skills-container {
+    margin-top: 80px;
+  }
+
   .wave {
-    background-color: tra;
     display: block;
     position: absolute;
-    top: 560px;
+    top: 90%;
     left: 0;
     width: 100%;
     z-index: 10;
@@ -1835,7 +1817,7 @@ button:visited {
     background-color: transparent;
     display: block;
     position: absolute;
-    top: 560px;
+    top: 90%;
     left: 0;
     width: 100%;
     z-index: 1;
@@ -1853,7 +1835,6 @@ button:visited {
   }
 
   .skills {
-    margin-top: -100px;
     height: 120vh;
   }
 
@@ -1870,9 +1851,9 @@ button:visited {
 
   .skill-details {
     width: 300px;
-    top: 900px;
+    top: 145%;
     font-size: 12px;
-    left: 37%;
+    margin-left: -80px;
   }
 
   .details {

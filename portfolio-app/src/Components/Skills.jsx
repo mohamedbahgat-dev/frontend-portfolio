@@ -15,17 +15,6 @@ function Skills() {
   })
 
 
-  //calling scroll func on textelement 
-  useEffect(()=> {
-    scrollYProgress.on('change', e => {
-      
-      textScroll.current.setAttribute('startOffset',e *  -30 + '%' )
-    })
-
-  },[])
-
-
-
   // calling scroll function on skills elements
   useEffect(()=> {
     const mediaQuery = window.matchMedia("(min-width:992px)");
@@ -148,25 +137,21 @@ function Skills() {
 
   return (
     <div className='skills-root'>
-      <div className=' flex flex-col justify-center items-center mt-58  w-full  pr-5 '>    
-        <h2 className='skills-header text-5xl text-[#6e65f6] w-40 uppercase text-center z-30'> <span className='text-2xl '>See my</span> skills</h2>
-      </div>
+
 
       {/* sun shape */}
-      <div>
-        <div className='skills-elipse'></div> 
-        {/* <div className='skill-ball z-20'></div> */}
-      </div>
+      <div className='w-full max-[600px]:h-[80vh] min-[600px]:h-[80vh] min-[768px]:h-[80vh] min-[992px]:h-[100vh]  flex justify-center items-center '>
+        <div className='skills-elipse flex justify-center items-center'>
+          <h2 className='skills-header text-[#6e65f6] uppercase text-center z-30'> <span className='text-2xl inline-block'>See my</span> skills</h2>
+        </div> 
 
-      <div ref={containerScroll}  className='skills-container mt-[420px] mb-40 h-[120vh]'>
-          <svg width="1455" height="154" viewBox="0 0 1463 124" fill="none" xmlns="http://www.w3.org/2000/svg" className='moving-tap absolute top-[500px] overflow-hidden max-[600px]:hidden min-[600px]:hidden min-[992px]:block'>
-                  <path id='text-path' d="M4.52585 60.4009C621.82 286.992 880.5 -110 1458.77 54.4438" stroke="none" stroke-width="17"/>
-                  <text id='moving-text' stroke='#9470e7' fill='#9470e7' className='uppercase overflow-hidden min-[992px]:hidden'>
-                        <textPath href='#text-path' ref={textScroll} startOffset={'-30%'}>HTML . CSS . JAVASCRIPT . REACT . tailwind . Node.js . UX/UI . Web . Visuals . Animations . GIT . GitHub . DOM . HTML . CSS . JAVASCRIPT . REACT . tailwind . Node.js . UX/UI . Web . Visuals . Animations . GIT . GitHub . DOM</textPath>
-                  </text>  
-          </svg>
+      </div>
       
-       
+
+  
+
+      <div ref={containerScroll}  className='skills-container mb-40 h-[120vh]'>
+        
          <div className='flex flex-col items-center justify-center '>
            
             <div className="wave">
@@ -174,13 +159,14 @@ function Skills() {
                     <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
                 </svg>
             </div>
+
             <div className="wave-2">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
                 </svg>
             </div>
             
-            <div className='skills min-[992]:-mt-32 justify-items-center place-items-center grid grid-cols-3  min-[992px]:h-[950px] '>
+            <div className='skills justify-items-center place-items-center grid grid-cols-3'>
 
                 <div className="skill javascript-cover w-50 h-50 flex items-center justify-center self-start opacity-0  ">
                   <div className='javascript flex items-center justify-center grayscale-100 hover:grayscale-0'>

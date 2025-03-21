@@ -23,7 +23,7 @@ function Services() {
 
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center w-full'>
           <div className='night-stars absolute top-0 w-full h-[1100px] flex justify-center -z-1'>
             <span className='planet absolute top-40 z-20 '></span>
             <span className='planet-2 absolute top-40 z-10'></span>
