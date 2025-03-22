@@ -376,10 +376,6 @@ button:visited {
   scale: 105%;
 }
 
-.tech span {
-  border-bottom: 3px solid red;
-}
-
 .hide-skills {
   transform: translateX(-300px) translateY(-200px);
 }
@@ -592,7 +588,7 @@ button:visited {
   height: 50%;
 }
 
-/* #stars {
+#stars {
   width: 2px;
   height: 2px;
   background: transparent;
@@ -929,7 +925,7 @@ button:visited {
     1486px 700px #c49952, 170px 1989px #c49952, 1275px 799px #c49952,
     772px 2000px #c49952, 1642px 362px #c49952, 216px 940px #c49952,
     1893px 281px #c49952, 1944px 1298px #c49952, 1294px 400px #c49952;
-} */
+}
 
 /* styling projects section */
 
@@ -1157,12 +1153,8 @@ button:visited {
     display: none;
   }
 
-  .tech {
-    font-size: 25px;
-  }
-
   .skills {
-    height: 500px;
+    height: 480px;
   }
 
   .skills .skill {
@@ -1176,35 +1168,35 @@ button:visited {
   }
 
   .html-cover {
-    transform: translateY(45px);
+    transform: translateY(40px);
   }
 
   .tailwind-cover {
-    transform: translateY(-45px);
+    transform: translateY(-40px);
   }
 
   .javascript-cover {
-    transform: translate(40px, 90px);
+    transform: translate(30px, 80px);
   }
 
   .css-cover {
-    transform: translate(-40px, 90px);
+    transform: translate(-30px, 80px);
   }
 
   .git-cover {
-    transform: translate(-118px, 70px);
+    transform: translate(-110px, 60px);
   }
 
   .react-cover {
-    transform: translate(115px, 70px);
+    transform: translate(108px, 60px);
   }
 
   .figma-cover {
-    transform: translate(-30px, -100px);
+    transform: translate(-20px, -90px);
   }
 
   .github-cover {
-    transform: translate(30px, -100px);
+    transform: translate(20px, -90px);
   }
 
   .skills .skill div {
