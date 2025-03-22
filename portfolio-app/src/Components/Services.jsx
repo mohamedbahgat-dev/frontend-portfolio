@@ -47,6 +47,7 @@ function Services() {
                 <svg id='code' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className=" w-0 bg-[#6e65f6] absolute mt-83 -ml-16 rounded-full p-2">
                     <path fillRule="evenodd" d="M14.447 3.026a.75.75 0 0 1 .527.921l-4.5 16.5a.75.75 0 0 1-1.448-.394l4.5-16.5a.75.75 0 0 1 .921-.527ZM16.72 6.22a.75.75 0 0 1 1.06 0l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 0 1 0-1.06Zm-9.44 0a.75.75 0 0 1 0 1.06L2.56 12l4.72 4.72a.75.75 0 0 1-1.06 1.06L.97 12.53a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
                 </svg>
+                
                 <div className=" w-fit bg-[#6e65f6] absolute mt-85 text-center text-white rounded-full p-2 px-4">
                     <h3>Web development</h3>
                 </div>

@@ -37,7 +37,7 @@ function Skills() {
         }
 
         else if (i === 1){
-          ele.style.transform = `translateY(${e *  60 }px)`
+          ele.style.transform = `translateY(${e *  50 }px)`
           ele.style.opacity = `${ e * 0.85}`
         
 
@@ -51,7 +51,7 @@ function Skills() {
         }
 
         else if (i === 3){
-          ele.style.transform = `translate(${e * 230 }px ,${e *  80 }px)`
+          ele.style.transform = `translate(${e * 245 }px ,${e *  145 }px)`
           ele.style.opacity = `${ e * 0.85}`
         
           ele.style.rotate = `${ - (Math.sqrt(e) * 10 + 2 ) + 10}deg`
@@ -59,7 +59,7 @@ function Skills() {
         }
 
         else if (i === 4){
-          ele.style.transform = `translate(${e * -235 }px ,${e *  63 }px)`
+          ele.style.transform = `translate(${e * -260 }px ,${e *  130 }px)`
           ele.style.opacity = `${ e * 0.95}`
 
           ele.style.rotate = `${  (Math.sqrt(e) * 10 + 2 ) - 14}deg`
@@ -75,7 +75,7 @@ function Skills() {
         }
 
         else if (i === 6){
-          ele.style.transform = `translateY(${e *  - 60 }px)`
+          ele.style.transform = `translateY(${e *  - 50 }px)`
           ele.style.opacity = `${ e * 0.85}`
         
 
@@ -102,15 +102,15 @@ function Skills() {
   
     const skillsDetails = document.querySelectorAll('.skill-details .skills-kit')
 
-    const techTitle = document.querySelector('.tech')
-    console.log(techTitle)
+    const skillSlogan = document.querySelector('.skills-slogan')
+  
 
     skills.forEach((skill, skillIndex) => {
       skill.addEventListener('mouseover', function(){
 
         skillsDetails.forEach((detail, detailIndex)=> {
         if(skillIndex === detailIndex){
-          techTitle.style.opacity = '0.05'
+          skillSlogan.style.display = 'none'
           detail.style.display = 'flex'
           detail.style.animation = 'fadeIn 2s ease-in-out'
         }
@@ -123,7 +123,7 @@ function Skills() {
         if(skillIndex === detailIndex){
           
           detail.style.display = 'none'
-          techTitle.style.opacity = '1'
+          skillSlogan.style.display = 'block'
           detail.style.transition = '2s ease-in-out'
           detail.style.animation = 'fadeIn 2s ease-in-out'
          
@@ -192,8 +192,81 @@ function Skills() {
                   </div>
                 </div>
                 
-                <div>
-                    <h2 className='tech uppercase font-poppins text-[#6e65f6] font-semibold text-5xl self-end '>Skills&Tools </h2>
+                
+
+                  {/* skills details */}
+                <div className='skill-details flex gap-10  text-sm text-center items-center justify-center font-poppins z-0 '>
+
+                
+                  <h2 className='skills-slogan text-center uppercase font-poppins text-[#f4f4e9d2] font-semibold text-4xl'>Skills&Tools </h2>
+                  
+
+                  <div className='skills-kit hidden  justify-center items-center gap-10 '>          
+                      <ul id='js-details' className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
+                        <li>Strong understanding of core JavaScript concepts, including DOM manipulation, event handling, and asynchronous programming.</li>
+                        <li>Experience with modern ES6+ features such as arrow functions, destructuring, promises, and async/await.</li>
+                        <li>Developed interactive web applications using vanilla JavaScript and optimized performance for better user engagement.</li> 
+                    </ul>
+                  </div>
+                  
+                  <div className='skills-kit hidden  justify-center items-center gap-10'>    
+                      <ul id='html-details' className='details  w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full'>
+                        <li>Proficient in writing semantic, accessible, and SEO-friendly HTML5 markup.</li>
+                        <li>Ensured cross-browser compatibility by writing clean, standards-compliant HTML code.</li>
+                        <li>Collaborated with designers to translate wireframes and mockups into functional HTML prototypes.</li> 
+                    </ul>
+                  </div>
+
+                  <div className='skills-kit hidden  justify-center items-center gap-10'>    
+                      <ul className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
+                        <li >Skilled in creating responsive and cross-browser-compatible layouts using CSS3, Flexbox, and Grid.</li>
+                        <li>Implemented animations, transitions, and modern design techniques to enhance user experience.</li>
+                        <li>Ensured cross-browser compatibility by using vendor prefixes and testing on multiple browsers (Chrome, Firefox, Safari, Edge).</li> 
+                    </ul>
+                  </div>
+
+                  
+                  <div className='skills-kit hidden  justify-center items-center gap-10'>    
+                      <ul className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
+                        <li>Built dynamic, reusable, and component-based user interfaces using React.js.</li>
+                        <li>Proficient in state management using React Hooks (useState, useEffect) and Context API.</li>
+                        <li>Experience with React Router for single-page application (SPA) navigation.</li> 
+                    </ul>
+                  </div>
+
+                  <div className='skills-kit hidden  justify-center items-center gap-10'>    
+                      <ul className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
+                        <li>Proficient in using Git for version control, including branching, merging, and pull requests.</li>
+                        <li>Collaborated with teams using GitHub/GitLab for code reviews, issue tracking, and project management.</li>
+                        <li>Maintained clean and organized repositories with clear commit messages and documentation.</li> 
+                    </ul>
+                  </div>
+
+                  <div className='skills-kit hidden  justify-center items-center gap-10'>    
+                      <ul className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
+                        <li>Proficient in using GitHub for version control, collaboration, and project management in software development workflows.</li>
+                        <li>Skilled in creating and managing repositories for both personal and team projects, ensuring organized and efficient codebases.</li>
+                        <li>Utilized pull requests (PRs) to review, discuss, and merge code changes, ensuring high-quality and maintainable code.</li> 
+                    </ul>
+                  </div>
+
+                
+
+                  <div className='skills-kit hidden  justify-center items-center gap-10'>    
+                      <ul className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
+                        <li>Proficient in using Tailwind CSS, a utility-first CSS framework, to rapidly build modern, responsive, and customizable user interfaces.</li>
+                        <li>Skilled in leveraging Tailwind’s utility classes to style components directly in HTML.</li>
+                        <li>Experienced in creating responsive designs using Tailwind’s breakpoint prefixes (e.g., sm:, md:, lg:, xl:, 2xl:).</li> 
+                    </ul>
+                  </div>
+
+                    <div className='skills-kit hidden  justify-center items-center gap-10'>    
+                      <ul className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
+                        <li>Proficient in using Figma for designing, prototyping, and collaborating on user interfaces and web applications.</li>
+                        <li>Experienced in creating wireframes, mockups, and high-fidelity designs for websites.</li>
+                        <li>Created interactive prototypes with transitions, animations, and clickable elements to demonstrate user flows and functionality.</li> 
+                    </ul>
+                  </div>
                 </div>
 
                 <div className="skill git-cover  w-50 h-50 flex justify-center items-center self-start ml-63.5 opacity-0">
@@ -223,76 +296,7 @@ function Skills() {
             </div>
 
             
-            {/* skills details */}
-            <div className='skill-details absolute top-[923px] flex gap-10 w-[600px] text-sm text-center text-[#16134c] font-poppins  '>
-
-                <div className='skills-kit hidden  justify-center items-center gap-10 '>          
-                    <ul id='js-details' className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
-                      <li>Strong understanding of core JavaScript concepts, including DOM manipulation, event handling, and asynchronous programming.</li>
-                      <li>Experience with modern ES6+ features such as arrow functions, destructuring, promises, and async/await.</li>
-                      <li>Developed interactive web applications using vanilla JavaScript and optimized performance for better user engagement.</li> 
-                  </ul>
-                </div>
-                 
-                <div className='skills-kit hidden  justify-center items-center gap-10'>    
-                    <ul id='html-details' className='details  w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full'>
-                      <li>Proficient in writing semantic, accessible, and SEO-friendly HTML5 markup.</li>
-                      <li>Ensured cross-browser compatibility by writing clean, standards-compliant HTML code.</li>
-                      <li>Collaborated with designers to translate wireframes and mockups into functional HTML prototypes.</li> 
-                  </ul>
-                </div>
-
-                <div className='skills-kit hidden  justify-center items-center gap-10'>    
-                    <ul className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
-                      <li >Skilled in creating responsive and cross-browser-compatible layouts using CSS3, Flexbox, and Grid.</li>
-                      <li>Implemented animations, transitions, and modern design techniques to enhance user experience.</li>
-                      <li>Ensured cross-browser compatibility by using vendor prefixes and testing on multiple browsers (Chrome, Firefox, Safari, Edge).</li> 
-                  </ul>
-                </div>
-
-                
-                 <div className='skills-kit hidden  justify-center items-center gap-10'>    
-                    <ul className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
-                      <li>Built dynamic, reusable, and component-based user interfaces using React.js.</li>
-                      <li>Proficient in state management using React Hooks (useState, useEffect) and Context API.</li>
-                      <li>Experience with React Router for single-page application (SPA) navigation.</li> 
-                  </ul>
-                </div>
-
-                 <div className='skills-kit hidden  justify-center items-center gap-10'>    
-                    <ul className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
-                      <li>Proficient in using Git for version control, including branching, merging, and pull requests.</li>
-                      <li>Collaborated with teams using GitHub/GitLab for code reviews, issue tracking, and project management.</li>
-                      <li>Maintained clean and organized repositories with clear commit messages and documentation.</li> 
-                  </ul>
-                </div>
-
-                 <div className='skills-kit hidden  justify-center items-center gap-10'>    
-                    <ul className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
-                      <li>Proficient in using GitHub for version control, collaboration, and project management in software development workflows.</li>
-                      <li>Skilled in creating and managing repositories for both personal and team projects, ensuring organized and efficient codebases.</li>
-                      <li>Utilized pull requests (PRs) to review, discuss, and merge code changes, ensuring high-quality and maintainable code.</li> 
-                  </ul>
-                </div>
-
-               
-
-                <div className='skills-kit hidden  justify-center items-center gap-10'>    
-                    <ul className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
-                      <li>Proficient in using Tailwind CSS, a utility-first CSS framework, to rapidly build modern, responsive, and customizable user interfaces.</li>
-                      <li>Skilled in leveraging Tailwind’s utility classes to style components directly in HTML.</li>
-                      <li>Experienced in creating responsive designs using Tailwind’s breakpoint prefixes (e.g., sm:, md:, lg:, xl:, 2xl:).</li> 
-                  </ul>
-                </div>
-
-                  <div className='skills-kit hidden  justify-center items-center gap-10'>    
-                    <ul className='details w-[60%] h-[350px] p-14  flex flex-col gap-2 items-center justify-center rounded-full '>
-                      <li>Proficient in using Figma for designing, prototyping, and collaborating on user interfaces and web applications.</li>
-                      <li>Experienced in creating wireframes, mockups, and high-fidelity designs for websites.</li>
-                      <li>Created interactive prototypes with transitions, animations, and clickable elements to demonstrate user flows and functionality.</li> 
-                   </ul>
-                 </div>
-              </div>
+            
            
             </div>  
         </div>

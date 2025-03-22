@@ -13,7 +13,7 @@ function NavBar() {
   
   
   const HandleMenuClick  = ()=> {
-    smallMenuRef.current.className = 'max-[600px]:flex min-[600px]:flex min-[600px]:bg-red-500 max-[768px]:flex flex-col gap-5 w-[500px] h-[80vh] pl-5 pt-5 absolute top-20 left-0 '
+    smallMenuRef.current.className = 'max-[600px]:flex min-[600px]:flex max-[768px]:flex flex-col gap-5 w-[500px] h-[80vh] pl-5 pt-5 absolute top-20 left-0 '
     closeMenuRef.current.className = 'block hover:cursor-pointer'
     menuNameRef.current.className = 'hidden'
     menuIconRef.current.style.fill = '#ff8000'
