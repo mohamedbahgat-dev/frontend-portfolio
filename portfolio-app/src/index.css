@@ -1021,7 +1021,6 @@ button:visited {
 
   .frontend-container {
     width: 400px;
-
     text-align: center;
     height: 140px;
   }
@@ -1032,18 +1031,17 @@ button:visited {
   }
 
   .elipse {
-    bottom: 57%;
-    left: 5%;
-    width: 88%;
-    rotate: 170deg;
-
+    bottom: 63%;
+    left: 0%;
+    width: 98%;
+    rotate: 160deg;
     border-bottom-width: -10px;
   }
 
   .shine {
     animation: none;
     margin-top: 80px;
-    width: 160%;
+    width: 165%;
   }
 
   .hero {
