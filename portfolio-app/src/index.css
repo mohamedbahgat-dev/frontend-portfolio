@@ -1106,6 +1106,10 @@ button:visited {
   }
 
   .market-title {
+    width: 55%;
+  }
+
+  .market-title {
     font-size: 6vw;
   }
   .market-title-project {
