@@ -1418,8 +1418,8 @@ button:visited {
   }
 
   .skills-elipse {
-    width: 40vw;
-    height: 40vw;
+    width: 30vw;
+    height: 30vw;
   }
 
   .skills-header {
@@ -1612,8 +1612,9 @@ button:visited {
   }
 
   .skills-elipse {
-    width: 35vw;
-    height: 35vw;
+    width: 30vw;
+    height: 30vw;
+    margin-bottom: 30px;
   }
 
   .skills {
